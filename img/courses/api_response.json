@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alphorm.com</title>
+    <meta name="google-site-verification" content="Loi7uR_-QOpW47Om0-OyTut1Q06CmiEbkeQZNUJiGy4">
+    <link rel="preload" href="configuration" as="fetch">
+    <link rel="preload" as="image" href="https://staticv2.alphorm.com/prod/assets/images/newhome.webp">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+
+    <script src="configuration.js" type="text/javascript"></script>
+    <script async>
+      (function (w, d, s, l, i) {
+        if (!window.navigator.userAgent.includes("Prerender")) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        }
+      })(
+        window,
+        document,
+        "script",
+        "dataLayer",
+        window.AlphormConfiguration.GoogleTagManager
+      );
+    </script>
+  </head>
+
+  <body>
+    
+    <main id="root"><img with="549" height="546" src="https://staticv2.alphorm.com/prod/assets/images/newhome.webp" alt="Illustration représentant la formation en ligne et le développement des compétences professionnelles sur Alphorm" class="image-0-2-113" title="hero Illustration"></main>
+    
+    <script>
+      const body = document.getElementsByTagName("body")[0];
+      const head = document.getElementsByTagName("head")[0];
+      const firstChild = document.body.firstChild;
+      const { FavIconLink } = window.AlphormConfiguration;
+      const faviconLink = document.createElement("link");
+      faviconLink.href = FavIconLink;
+      faviconLink.rel = "shortcut icon";
+      faviconLink.type = "image/ico";
+
+      if (!window.navigator.userAgent.includes("Prerender")) {
+        const noscriptElement = document.createElement("noscript");
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute(
+          "src",
+          `https://www.googletagmanager.com/ns.html?id=${window.AlphormConfiguration.GoogleTagManager}`
+        );
+        iframe.setAttribute("height", "0");
+        iframe.setAttribute("width", "0");
+        iframe.setAttribute("style", "display:none;visibility:hidden");
+        noscriptElement.appendChild(iframe);
+        firstChild.parentNode.insertBefore(noscriptElement, firstChild);
+      }
+
+      head.appendChild(faviconLink);
+      const script = document.createElement("script");
+      script.src =
+        "https://www.google.com/recaptcha/api.js?render=" +
+        window.AlphormConfiguration.RecaptchaSiteKey;
+      script.async = true;
+      head.appendChild(script);
+    </script>
+  <script defer="defer" src="/manifest.6e7ed6a55563049a9228.js"></script><script defer="defer" src="/vendors-448c8f98.6e7ed6a55563049a9228.js"></script><script defer="defer" src="/vendors-cdd60c62.6e7ed6a55563049a9228.js"></script><script defer="defer" src="/vendors-5bbef7f0.6e7ed6a55563049a9228.js"></script><script
