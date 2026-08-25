@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f23"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <radialGradient id="hole" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+  </defs>
+  <rect width="480" height="300" fill="url(#bg)" rx="8"/>
+  <!-- Score header -->
+  <rect x="0" y="0" width="480" height="40" fill="#0f3460" rx="8"/>
+  <rect x="0" y="20" width="480" height="20" fill="#0f3460"/>
+  <text x="24" y="28" fill="#fbbf24" font-family="'Courier New', monospace" font-size="20" font-weight="900">SCORE</text>
+  <text x="130" y="28" fill="#fff" font-family="'Courier New', monospace" font-size="20" font-weight="900">1 2 8 0</text>
+  <text x="340" y="28" fill="#94a3b8" font-family="'Courier New', monospace" font-size="12">HI</text>
+  <text x="370" y="28" fill="#fbbf24" font-family="'Courier New', monospace" font-size="14" font-weight="700">5 0 0 0</text>
+  <!-- Ground -->
+  <rect x="0" y="200" width="480" height="100" fill="url(#grass)" rx="0"/>
+  <ellipse cx="240" cy="200" rx="260" ry="10" fill="#16a34a"/>
+  <!-- Holes row -->
+  <ellipse cx="80" cy="230" rx="50" ry="18" fill="url(#hole)"/>
+  <ellipse cx="200" cy="230" rx="50" ry="18" fill="url(#hole)"/>
+  <ellipse cx="320" cy="230" rx="50" ry="18" fill="url(#hole)"/>
+  <ellipse cx="440" cy="230" rx="50" ry="18" fill="url(#hole)"/>
+  <!-- Holes back row -->
+  <ellipse cx="140" cy="265" rx="50" ry="18" fill="url(#hole)"/>
+  <ellipse cx="260" cy="265" rx="50" ry="18" fill="url(#hole)"/>
+  <ellipse cx="380" cy="265" rx="50" ry="18" fill="url(#hole)"/>
+  <!-- Mole 1 - popping up from front row -->
+  <g transform="translate(320, 205)">
+    <ellipse cx="0" cy="10" rx="28" ry="22" fill="#8B5E3C"/>
+    <ellipse cx="0" cy="10" rx="24" ry="18" fill="#A0724B"/>
+    <circle cx="-9" cy="-2" r="5" fill="#fff"/>
+    <circle cx="9" cy="-2" r="5" fill="#fff"/>
+    <circle cx="-9" cy="-2" r="3" fill="#1a1a1a"/>
+    <circle cx="9" cy="-2" r="3" fill="#1a1a1a"/>
+    <circle cx="-8" cy="-3" r="1" fill="#fff"/>
+    <circle cx="10" cy="-3" r="1" fill="#fff"/>
+    <ellipse cx="0" cy="10" rx="10" ry="7" fill="#C4956A"/>
+    <circle cx="-3" cy="9" r="2" fill="#1a1a1a"/>
+    <circle cx="3" cy="9" r="2" fill="#1a1a1a"/>
+    <ellipse cx="0" cy="16" rx="4" ry="2" fill="#1a1a1a"/>
+    <circle cx="-18" cy="5" r="6" fill="#8B5E3C"/>
+    <circle cx="18" cy="5" r="6" fill="#8B5E3C"/>
+  </g>
+  <!-- Mole 2 - hiding in back row -->
+  <g transform="translate(260, 245)">
+    <ellipse cx="0" cy="8" rx="22" ry="16" fill="#8B5E3C"/>
+    <ellipse cx="0" cy="8" rx="18" ry="13" fill="#A0724B"/>
+    <circle cx="-7" cy="0" r="4" fill="#fff"/>
+    <circle cx="7" cy="0" r="4" fill="#fff"/>
+    <circle cx="-7" cy="0" r="2.5" fill="#1a1a1a"/>
+    <circle cx="7" cy="0" r="2.5" fill="#1a1a1a"/>
+    <ellipse cx="0" cy="8" rx="7" ry="5" fill="#C4956A"/>
+  </g>
+  <!-- Hammer -->
+  <g transform="translate(370, 170) rotate(-30)">
+    <rect x="-3" y="0" width="6" height="60" rx="2" fill="#78350f"/>
+    <rect x="-14" y="-10" width="28" height="22" rx="4" fill="#71717a"/>
+    <rect x="-14" y="-10" width="28" height="6" rx="3" fill="#a1a1aa"/>
+    <rect x="-12" y="10" width="24" height="4" rx="2" fill="#52525b"/>
+  </g>
+  <!-- Stars / effects -->
+  <text x="340" y="185" fill="#fbbf24" font-size="18" opacity="0.8">&#9733;</text>
+  <text x="310" y="175" fill="#fbbf24" font-size="12" opacity="0.5">&#9733;</text>
+  <!-- Bottom label -->
+  <text x="240" y="295" text-anchor="middle" fill="#64748b" font-family="'Courier New', monospace" font-size="10" letter-spacing="2">WHACK-A-MOLE</text>
+</svg>
