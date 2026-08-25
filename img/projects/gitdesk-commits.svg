@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" fill="none">
+  <!-- Window frame -->
+  <rect width="960" height="640" rx="8" fill="#F0F2F5"/>
+  <rect x="1" y="1" width="958" height="638" rx="7" fill="#F0F2F5" stroke="#D0D0D0" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="1" y="1" width="958" height="30" rx="7" fill="#FFFFFF"/>
+  <rect x="1" y="16" width="958" height="15" fill="#FFFFFF"/>
+  <circle cx="20" cy="16" r="5" fill="#F44336"/>
+  <circle cx="36" cy="16" r="5" fill="#FF9800"/>
+  <circle cx="52" cy="16" r="5" fill="#4CAF50"/>
+  <text x="480" y="21" font-family="Segoe UI,sans-serif" font-size="11" fill="#9E9E9E" text-anchor="middle">GitDesk</text>
+
+  <!-- Top bar -->
+  <rect x="1" y="30" width="958" height="44" fill="#1a237e"/>
+  <rect x="12" y="37" width="34" height="28" rx="4" fill="#FFFFFF"/>
+  <text x="22" y="56" font-family="Segoe UI,sans-serif" font-size="14" fill="#1a237e">📂</text>
+  <text x="56" y="56" font-family="Segoe UI,sans-serif" font-size="13" fill="#FFFFFF">C:\Users\Jean\Documents\mon-projet</text>
+  <rect x="428" y="38" width="70" height="24" rx="4" fill="#2E7D32"/>
+  <text x="438" y="54" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Git OK</text>
+  <rect x="504" y="38" width="70" height="24" rx="4" fill="#FF8F00"/>
+  <text x="514" y="54" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">🌿 main</text>
+  <rect x="580" y="38" width="60" height="24" rx="4" fill="#2E7D32"/>
+  <text x="590" y="54" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">✔ à jour</text>
+  <rect x="870" y="37" width="34" height="28" rx="4" fill="#283593"/>
+  <text x="878" y="56" font-family="Segoe UI,sans-serif" font-size="14" fill="#FFFFFF">⟳</text>
+  <rect x="910" y="37" width="40" height="28" rx="4" fill="#283593"/>
+  <text x="916" y="55" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Auto</text>
+
+  <!-- SIDEBAR -->
+  <rect x="1" y="74" width="200" height="565" fill="#263238"/>
+  <text x="17" y="100" font-family="Segoe UI,sans-serif" font-size="10" font-weight="700" fill="#607D8B">SECTION</text>
+  <text x="17" y="130" font-family="Segoe UI,sans-serif" font-size="14" fill="#FFFFFF">Démarrer</text>
+  <text x="17" y="166" font-family="Segoe UI,sans-serif" font-size="14" fill="#FFFFFF">Sauvegardes</text>
+  <text x="17" y="202" font-family="Segoe UI,sans-serif" font-size="14" fill="#FFFFFF">Fichiers</text>
+  <text x="17" y="238" font-family="Segoe UI,sans-serif" font-size="14" fill="#64FFDA">Avancé</text>
+  <text x="17" y="274" font-family="Segoe UI,sans-serif" font-size="14" fill="#FFFFFF">Configuration Git</text>
+  <text x="17" y="314" font-family="Segoe UI,sans-serif" font-size="12" fill="#90CAF9">Référence</text>
+  <text x="17" y="340" font-family="Segoe UI,sans-serif" font-size="12" fill="#90CAF9">Aide</text>
+  <text x="17" y="366" font-family="Segoe UI,sans-serif" font-size="12" fill="#EF9A9A">Don</text>
+  <line x1="1" y1="502" x2="201" y2="502" stroke="#37474F" stroke-width="1"/>
+  <rect x="1" y="502" width="200" height="38" fill="#263238"/>
+  <text x="17" y="525" font-family="Segoe UI,sans-serif" font-size="11" fill="#90CAF9">🌙</text>
+  <g transform="translate(52,514)">
+    <rect x="0" y="0" width="28" height="18" rx="2" fill="#FFFFFF" stroke="#90A4AE" stroke-width="1"/>
+    <rect x="0" y="0" width="9.33" height="18" fill="#002395"/>
+    <rect x="18.67" y="0" width="9.33" height="18" fill="#ED2939"/>
+    <rect x="34" y="0" width="28" height="18" rx="2" fill="#012169" stroke="#90A4AE" stroke-width="1"/>
+    <path d="M34 9h28M48 0v18" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M34 3.5h28M34 14.5h28M41 0v18" stroke="#C8102E" stroke-width="1.5"/>
+    <path d="M48 0v18" stroke="#C8102E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Content -->
+  <rect x="201" y="74" width="758" height="565" fill="#F0F2F5"/>
+
+  <text x="225" y="114" font-family="Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#1a237e">Sauvegardes</text>
+  <text x="225" y="136" font-family="Segoe UI,sans-serif" font-size="13" fill="#757575">Créez et gérez vos sauvegardes (commits) Git.</text>
+
+  <!-- Create Commit Card -->
+  <rect x="225" y="156" width="714" height="120" rx="10" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="1"/>
+  <text x="241" y="184" font-family="Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#1a237e">Créer une sauvegarde</text>
+  <text x="241" y="204" font-family="Segoe UI,sans-serif" font-size="13" fill="#757575">Décrivez brièvement les modifications effectuées.</text>
+
+  <rect x="241" y="218" width="420" height="34" rx="4" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="1.5"/>
+  <text x="252" y="240" font-family="Segoe UI,sans-serif" font-size="13" fill="#BDBDBD">Description de la sauvegarde...</text>
+  <rect x="670" y="218" width="140" height="34" rx="4" fill="#1976D2"/>
+  <text x="700" y="240" font-family="Segoe UI,sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">💾 Sauvegarder</text>
+
+  <!-- Log output area -->
+  <rect x="225" y="290" width="714" height="60" rx="6" fill="#1a1a2e" stroke="#333333" stroke-width="1"/>
+  <text x="237" y="312" font-family="Consolas,monospace" font-size="11" fill="#64FFDA">$ git add -A</text>
+  <text x="237" y="328" font-family="Consolas,monospace" font-size="11" fill="#81C784">✔ Fichiers ajoutés au staging avec succès.</text>
+  <text x="237" y="344" font-family="Consolas,monospace" font-size="11" fill="#FFB74D">⚠ Aucune modification détectée.</text>
+
+  <!-- History Card -->
+  <rect x="225" y="364" width="714" height="250" rx="10" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="1"/>
+  <text x="241" y="392" font-family="Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#1a237e">Historique des sauvegardes</text>
+
+  <!-- Search box -->
+  <text x="700" y="392" font-family="Segoe UI,sans-serif" font-size="13" fill="#757575">🔍</text>
+  <rect x="714" y="380" width="200" height="26" rx="4" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="724" y="397" font-family="Segoe UI,sans-serif" font-size="12" fill="#BDBDBD">Filtrer...</text>
+
+  <!-- Commits list -->
+  <g transform="translate(241, 412)">
+    <rect x="0" y="0" width="678" height="34" rx="6" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+    <rect x="0" y="0" width="4" height="34" rx="2" fill="#4CAF50"/>
+    <text x="16" y="15" font-family="Consolas,monospace" font-size="11" fill="#333">a1b2c3d</text>
+    <text x="80" y="15" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#333">Ajout de la fonctionnalité de recherche</text>
+    <text x="80" y="28" font-family="Segoe UI,sans-serif" font-size="10" fill="#757575">Jean Dupont · il y a 2 heures</text>
+    <rect x="590" y="3" width="80" height="28" rx="4" fill="#1565C0"/>
+    <text x="604" y="22" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Restaurer</text>
+
+    <rect x="0" y="38" width="678" height="34" rx="6" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+    <rect x="0" y="38" width="4" height="34" rx="2" fill="#4CAF50"/>
+    <text x="16" y="53" font-family="Consolas,monospace" font-size="11" fill="#333">e4f5g6h</text>
+    <text x="80" y="53" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#333">Correction du bug d'affichage des fichiers</text>
+    <text x="80" y="66" font-family="Segoe UI,sans-serif" font-size="10" fill="#757575">Jean Dupont · il y a 5 heures</text>
+    <rect x="590" y="41" width="80" height="28" rx="4" fill="#1565C0"/>
+    <text x="604" y="60" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Restaurer</text>
+
+    <rect x="0" y="76" width="678" height="34" rx="6" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+    <rect x="0" y="76" width="4" height="34" rx="2" fill="#FF9800"/>
+    <text x="16" y="91" font-family="Consolas,monospace" font-size="11" fill="#333">i7j8k9l</text>
+    <text x="80" y="91" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#333">Mise à jour de la documentation</text>
+    <text x="80" y="104" font-family="Segoe UI,sans-serif" font-size="10" fill="#757575">Marie Martin · il y a 1 jour</text>
+    <rect x="590" y="79" width="80" height="28" rx="4" fill="#1565C0"/>
+    <text x="604" y="98" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Restaurer</text>
+
+    <rect x="0" y="114" width="678" height="34" rx="6" fill="#FAFAFA" stroke="#E0E0E0" stroke-width="1"/>
+    <rect x="0" y="114" width="4" height="34" rx="2" fill="#4CAF50"/>
+    <text x="16" y="129" font-family="Consolas,monospace" font-size="11" fill="#333">m0n1o2p</text>
+    <text x="80" y="129" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600" fill="#333">Refactoring du module d'export</text>
+    <text x="80" y="142" font-family="Segoe UI,sans-serif" font-size="10" fill="#757575">Jean Dupont · il y a 2 jours</text>
+    <rect x="590" y="117" width="80" height="28" rx="4" fill="#1565C0"/>
+    <text x="604" y="136" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Restaurer</text>
+  </g>
+</svg>
