@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean-Philippe Parein - Portfolio</title>
+  <meta name="description" content="Portfolio de Jean-Philippe Parein - Technicien informatique & réseau, formateur, développeur. Je connecte les systèmes, le code et les connaissances.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><span class="logo-first">Jean</span>Philippe<span class="logo-last">Parein</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu de navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#experience">Parcours</a></li>
+        <li><a href="#trainer">Formateur</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#media">Médias</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <!-- Hero Content Overlay -->
+    <div class="hero-content">
+      <div class="hero-text" data-animate="fade-up">
+        <span class="hero-subtitle">Technicien informatique et réseaux</span>
+        <h1 class="hero-title">
+          <span class="hero-title-line">Jean-Philippe</span>
+          <span class="hero-title-line hero-title-accent">Parein</span>
+        </h1>
+        <p class="hero-tagline">
+          Technicien systèmes et réseaux, formateur e-learning et développeur. Je connecte les systèmes, le code et les connaissances depuis plus de 20 ans.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            Voir mon parcours
+          </a>
+          <a href="CV.pdf" download class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Télécharger mon CV
+          </a>
+          <a href="#projects" class="btn btn-secondary">Explorer mes projets</a>
+        </div>
+      </div>
+      <div class="hero-profile-card" data-animate="fade-up" data-delay="100">
+        <div class="profile-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Estaires — Hauts-de-France</span>
+        </div>
+        <div class="profile-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Plus de 20 ans d'expérience</span>
+        </div>
+        <div class="profile-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a3 3 0 003 3h8a3 3 0 003-3V8M12 14v2"/></svg>
+          <span>Systèmes, réseaux et formation</span>
+        </div>
+        <div class="profile-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <span>Assistance sur site et à distance</span>
+        </div>
+        <div class="profile-status">
+          <span class="status-dot"></span>
+          Ouvert aux opportunités
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">01 - Profil</span>
+        <h2 class="section-title">A propos</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate="fade-up" data-delay="100">
+          <p class="about-lead">
+            Réseaux, développement, formation - trois expertises au service d'un seul objectif : faire fonctionner l'outil informatique.
+            Technicien certifié, développeur Unity/Python et formateur sur les plus grandes plateformes en ligne,
+            j'accompagne les projets de A à Z.
+          </p>
+          <div class="about-details">
+            <div class="about-detail">
+              <span class="detail-label">Localisation</span>
+              <span class="detail-value">Estaires (59) - Hauts-de-France</span>
+            </div>
+            <div class="about-detail">
+              <span class="detail-label">Expérience</span>
+              <span class="detail-value">+20 ans en informatique</span>
+            </div>
+            <div class="about-detail">
+              <span class="detail-label">Disponibilité</span>
+              <span class="detail-value">Ouvert aux opportunités</span>
+            </div>
+            <div class="about-detail">
+              <span class="detail-label">Langues</span>
+              <span class="detail-value">Français (courant) - Anglais technique</span>
+            </div>
+          </div>
+          <p class="about-note">
+            <a href="https://psi-informatique.eu/" target="_blank" rel="noopener">PSI Informatique</a> - Micro-entreprise de services IT
+          </p>
+        </div>
+        <div class="about-competencies" data-animate="fade-up" data-delay="200">
+          <div class="comp-grid">
+            <div class="comp-card">
+              <div class="comp-header">
+                <div class="comp-icon comp-icon-network">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a3 3 0 003 3h8a3 3 0 003-3V8M12 14v2"/></svg>
+                </div>
+                <h4>Réseaux & Systèmes</h4>
+              </div>
+              <p>Conception, déploiement et maintenance d'infrastructures réseau. Virtualisation, Active Directory, pare-feu UTM.</p>
+              <div class="comp-brands">
+                <span class="brand-cisco">Cisco</span>
+                <span class="brand-vmware">VMware ESXi</span>
+                <span class="brand-hyperv">Hyper-V</span>
+                <span class="brand-pfsense">PfSense</span>
+                <span class="brand-netgate">Netgate</span>
+                <span class="brand-synology">Synology</span>
+                <span class="brand-ad">Active Directory</span>
+                <span class="brand-winserv">Windows Server</span>
+              </div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-header">
+                <div class="comp-icon comp-icon-dev">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h4>Développement</h4>
+              </div>
+              <p>Jeux vidéo, applications interactives et outils sur mesure. Du prototype au déploiement multiplateforme.</p>
+              <div class="comp-brands">
+                <span class="brand-unity">Unity</span>
+                <span class="brand-csharp">C#</span>
+                <span class="brand-python">Python</span>
+                <span class="brand-godot">Godot</span>
+                <span class="brand-lua">Lua</span>
+                <span class="brand-html">HTML/CSS</span>
+                <span class="brand-arduino">Arduino</span>
+                <span class="brand-rpi">Raspberry Pi</span>
+              </div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-header">
+                <div class="comp-icon comp-icon-training">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                </div>
+                <h4>Formation</h4>
+              </div>
+              <p>45+ cours en ligne, 72 000+ élèves. Pédagogie par la pratique, projets concrets et supports complets.</p>
+              <div class="comp-brands">
+                <span class="brand-udemy">Udemy</span>
+                <span class="brand-alphorm">Alphorm</span>
+                <span class="brand-skilleos">Skilleos</span>
+                <span class="brand-tuto">Tuto.com</span>
+                <span class="brand-elephorm">Elephorm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- EXPERIENCE -->
+  <section class="section section-experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">02 - Parcours</span>
+        <h2 class="section-title">Expériences professionnelles</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-animate="fade-up" data-delay="0">
+          <div class="timeline-date-col">
+            <span class="timeline-date">Depuis janvier 2017</span>
+            <span class="timeline-type">Indépendant</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card current">
+              <div class="current-badge">Actuellement</div>
+              <h3>Technicien informatique et réseaux &amp; Formateur e-learning</h3>
+              <p class="timeline-company">PSI-Informatique — Estaires</p>
+              <ul class="timeline-details">
+                <li>Dépannage matériel et logiciel</li>
+                <li>Administration et maintenance de réseaux, serveurs et postes clients</li>
+                <li>Installation et maintenance de caméras IP, NVR, NAS, VPN, serveurs et équipements réseau</li>
+                <li>Assistance technique sur site et à distance</li>
+                <li>Conception et réalisation de formations e-learning et en marque blanche</li>
+                <li>Formateur partenaire d'Udemy, Elephorm, Alphorm et Skilleos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-up" data-delay="100">
+          <div class="timeline-date-col">
+            <span class="timeline-date">Juillet à septembre 2020</span>
+            <span class="timeline-type">CDD</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Technicien support applicatif</h3>
+              <p class="timeline-company">ArcelorMittal — Dunkerque</p>
+              <ul class="timeline-details">
+                <li>Assistance applicative auprès des utilisateurs</li>
+                <li>Diagnostic, gestion et suivi des incidents techniques</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-up" data-delay="150">
+          <div class="timeline-date-col">
+            <span class="timeline-date">Mars à mai 2020</span>
+            <span class="timeline-type">CDD</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Formateur TSSI</h3>
+              <p class="timeline-company">AFPA — Lomme</p>
+              <ul class="timeline-details">
+                <li>Formation en systèmes, réseaux et support informatique</li>
+                <li>Accompagnement des stagiaires</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-up" data-delay="200">
+          <div class="timeline-date-col">
+            <span class="timeline-date">Janvier 2013 à mai 2016</span>
+            <span class="timeline-type">CDI</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Technicien systèmes et réseaux</h3>
+              <p class="timeline-company">M'Expériences – MXP Informatique — Wattignies</p>
+              <ul class="timeline-details">
+                <li>Maintenance des serveurs, postes clients et logiciels</li>
+                <li>Installation et administration de serveurs, NAS, pare-feu et équipements réseau</li>
+                <li>Déploiement des solutions Sage Gamme PE</li>
+                <li>Assistance aux utilisateurs et gestion des incidents</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-up" data-delay="250">
+          <div class="timeline-date-col">
+            <span class="timeline-date">Février à avril 2012</span>
+            <span class="timeline-type">CDD</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Assistant commercial</h3>
+              <p class="timeline-company">Guy Hoquet Immobilier — Bailleul</p>
+              <ul class="timeline-details">
+                <li>Accueil et relation client</li>
+                <li>Prise et suivi des rendez-vous</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-up" data-delay="300">
+          <div class="timeline-date-col">
+            <span class="timeline-date">2004 à 2011</span>
+            <span class="timeline-type">Gérant</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Gérant de société</h3>
+              <p class="timeline-company">Microclic Informatique — Houplines</p>
+              <ul class="timeline-details">
+                <li>Gestion administrative et commerciale de l'entreprise</li>
+                <li>Vente, installation et maintenance de matériel informatique</li>
+                <li>Assistance technique auprès des particuliers et des TPE</li>
+                <li>Commercialisation de services internet Orange et de solutions réseau</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h3 class="timeline-subtitle">Expériences antérieures</h3>
+        <div class="timeline-item" data-animate="fade-up" data-delay="350">
+          <div class="timeline-date-col">
+            <span class="timeline-date">1998 à 2003</span>
+            <span class="timeline-type">CDI</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Négociant en pommes de terre et transporteur</h3>
+              <p class="timeline-company">Ghesquier SARL — Quesnoy-sur-Deûle</p>
+              <ul class="timeline-details">
+                <li>Négoce et courtage de fruits et légumes</li>
+                <li>Comptabilité, facturation et gestion des contentieux Coface</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-animate="fade-up" data-delay="400">
+          <div class="timeline-date-col">
+            <span class="timeline-date">1995 à 1998</span>
+            <span class="timeline-type">CDI</span>
+          </div>
+          <div class="timeline-line-col">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card-col">
+            <div class="timeline-card">
+              <h3>Négociant et courtier en fruits et légumes</h3>
+              <p class="timeline-company">PNC SARL — Méteren</p>
+              <ul class="timeline-details">
+                <li>Comptabilité et facturation</li>
+                <li>Suivi des règlements et relances clients</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-header" data-animate="fade-up" style="margin-top: 3rem;">
+        <h2 class="section-title">Diplômes et formations</h2>
+      </div>
+      <div class="diplomas-grid">
+        <div class="diploma-card" data-animate="fade-up">
+          <div class="diploma-year">2013</div>
+          <div class="diploma-title">Formation Windows Server 2012, Exchange 2013, Active Directory et GPO</div>
+          <div class="diploma-school">M2I Formation</div>
+        </div>
+        <div class="diploma-card" data-animate="fade-up" data-delay="50">
+          <div class="diploma-year">2013</div>
+          <div class="diploma-title">Certification Administrateur UTM NETASQ CNA</div>
+          <div class="diploma-school">Exer Datacom</div>
+        </div>
+        <div class="diploma-card" data-animate="fade-up" data-delay="100">
+          <div class="diploma-year">2012</div>
+          <div class="diploma-title">Titre professionnel Technicien supérieur de support en informatique</div>
+          <div class="diploma-school">Niveau 5 (ancien niveau III), Bac+2 — AFPA</div>
+        </div>
+        <div class="diploma-card" data-animate="fade-up" data-delay="150">
+          <div class="diploma-year">1994</div>
+          <div class="diploma-title">Baccalauréat G, Gestion et comptabilité</div>
+          <div class="diploma-school">Lycée Paul Hazard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FORMATEUR -->
+  <section class="section section-trainer" id="trainer">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">03 - Formateur</span>
+        <h2 class="section-title">Transmission des connaissances</h2>
+      </div>
+      <div class="trainer-intro" data-animate="fade-up" data-delay="100">
+        <p>Formateur e-learning depuis 2017, je conçois et publie des cours en ligne sur les plateformes majeures. Mon objectif : rendre l'informatique accessible à tous, des débutants aux professionnels.</p>
+      </div>
+      <!-- Stats -->
+      <div class="trainer-stats" data-animate="fade-up" data-delay="150">
+        <div class="stat-card">
+          <span class="stat-number">51</span>
+          <span class="stat-label">Cours en ligne</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">102 300+</span>
+          <span class="stat-label">Élèves formés</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4,5/5</span>
+          <span class="stat-label">Note moyenne</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">560h+</span>
+          <span class="stat-label">De contenu vidéo</span>
+        </div>
+      </div>
+      <!-- Plateformes -->
+      <h3 class="projects-subtitle" data-animate="fade-up">Plateformes de formation</h3>
+      <div class="trainer-platforms" data-animate="fade-up" data-delay="100">
+        <a href="https://www.udemy.com/user/parein-jean-philippe/" target="_blank" rel="noopener" class="platform-card platform-udemy">
+          <div class="platform-logo"><img src="img/logo-udemy.svg" alt="Udemy"></div>
+          <div class="platform-info">
+            <h4>Udemy</h4>
+            <p>Cours en ligne - Technologies & programmation</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://www.elephorm.com/formation/unity-6-maitriser-les-fondamentaux-du-developpement-3d" target="_blank" rel="noopener" class="platform-card platform-elephorm">
+          <div class="platform-logo"><img src="img/logo-elephorm.webp" alt="Elephorm"></div>
+          <div class="platform-info">
+            <h4>Elephorm</h4>
+            <p>Unity - Fondamentaux du développement 3D</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://www.skilleos.com/expert/jean-philippe-parein" target="_blank" rel="noopener" class="platform-card platform-skilleos">
+          <div class="platform-logo"><img src="img/logo-skilleos.ico" alt="Skilleos" style="height:20px;width:auto"></div>
+          <div class="platform-info">
+            <h4>Skilleos</h4>
+            <p>Cours en ligne - Technologies, programmation & réseaux</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://www.alphorm.com/formateur/jean-philippe-parein" target="_blank" rel="noopener" class="platform-card platform-alphorm">
+          <div class="platform-logo"><img src="img/logo-alphorm.png" alt="Alphorm"></div>
+          <div class="platform-info">
+            <h4>Alphorm</h4>
+            <p>Unity, Python, C#, Bureautique</p>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <!-- Toutes les formations - Carrousel 3 lignes -->
+      <h3 class="projects-subtitle" data-animate="fade-up">Quelques-unes de mes formations</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="150">
+        <button class="carousel-btn carousel-prev" aria-label="Précédent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="course-carousel">
+        <a href="https://www.udemy.com/course/realite-augmentee-avec-unity-2017-et-vuforia/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-ar-vuforia.jpg" alt="Jeux &amp; App en Réalité augmentée avec Unity et Vuforia" loading="lazy"></div>
+          <h4>Jeux &amp; App en Réalité augmentée avec Unity et Vuforia</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity3d-formation-complete-developpeur-de-jeu-video/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity3d-complete.jpg" alt="Formation Complète Développeur de jeux vidéo - UNITY3D" loading="lazy"></div>
+          <h4>Formation Complète Développeur de jeux vidéo - UNITY3D</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/maitriser-unity-2018-et-le-c-formation-complete/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-csharp-guide.jpg" alt="Maîtriser Unity et le C# | Guide Complet Développeur" loading="lazy"></div>
+          <h4>Maîtriser Unity et le C# | Guide Complet Développeur</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/realiser-votre-personnage-avec-blender-unity-de-a-a-z/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-blender-unity.jpg" alt="Réaliser votre personnage avec Blender &amp; Unity | de A à Z" loading="lazy"></div>
+          <h4>Réaliser votre personnage avec Blender &amp; Unity | de A à Z</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-maitriser-les-fondamentauxapi-classes-et-structures/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-api-classes.jpg" alt="Unity Maitriser les fondamentaux API, Classes et Structures" loading="lazy"></div>
+          <h4>Unity Maitriser les fondamentaux API, Classes et Structures</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/debutez-et-realiser-un-quizz-game-pour-android-avec-unity3d/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-quizz-android.jpg" alt="Débutez et réaliser un Quizz Game pour Android avec UNITY3D" loading="lazy"></div>
+          <h4>Débutez et réaliser un Quizz Game pour Android avec UNITY3D</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/c-sharp-unity-guide-complet/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-csharp-unity-debutant.jpg" alt="Débuter avec C# et Unity | Guide Complet" loading="lazy"></div>
+          <h4>Débuter avec C# et Unity | Guide Complet</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/developpermonetiser-un-jeu-pour-smartphone-avec-unity/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-mobile-monetise.jpg" alt="Développer/Monétiser un jeu pour smartphone avec Unity" loading="lazy"></div>
+          <h4>Développer/Monétiser un jeu pour smartphone avec Unity</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity3d-developper-monetiser-un-jeu-pour-smartphone-android/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity3d-mobile-android.jpg" alt="Unity3D Développer, Monétiser un jeu pour Smartphone ANDROID" loading="lazy"></div>
+          <h4>Unity3D Développer, Monétiser un jeu pour Smartphone ANDROID</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/guide-complet-unity-realite-virtuelle-oculus-go/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-vr-oculus-go.jpg" alt="Guide complet UNITY - RÉALITÉ VIRTUELLE &amp; OCULUS GO" loading="lazy"></div>
+          <h4>Guide complet UNITY - RÉALITÉ VIRTUELLE &amp; OCULUS GO</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-integrer-les-services-google-play-games-dans-vos-jeux/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-google-play-games.jpg" alt="Unity Intégrer les services Google Play Games dans vos jeux." loading="lazy"></div>
+          <h4>Unity Intégrer les services Google Play Games dans vos jeux.</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/modeliser-en-3d-avec-probuilder-dans-unity/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-probuilder.jpg" alt="Modéliser en 3D avec Probuilder dans UNITY" loading="lazy"></div>
+          <h4>Modéliser en 3D avec Probuilder dans UNITY</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/developper-un-jeu-en-realite-virtuel-cardboard-avec-unity/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-vr-cardboard.jpg" alt="Développer un jeu en Réalité virtuelle avec Unity" loading="lazy"></div>
+          <h4>Développer un jeu en Réalité virtuelle avec Unity</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/debuter-et-creer-votre-premier-jeux-avec-unity-sans-code/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-sans-code.jpg" alt="Débuter et créer votre premier jeu avec Unity sans code" loading="lazy"></div>
+          <h4>Débuter et créer votre premier jeu avec Unity sans code</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/creer-un-jeu-multiplayer-avec-unity-5-et-photon-cloud/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-multiplayer-photon.jpg" alt="Créer un jeu multiplayer avec UNITY et Photon Cloud" loading="lazy"></div>
+          <h4>Créer un jeu multiplayer avec UNITY et Photon Cloud</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/developper-des-jeux-connectes-au-cloud-avec-unity-playfab/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-playfab.jpg" alt="Développer des jeux connectés au cloud avec Unity &amp; PlayFab" loading="lazy"></div>
+          <h4>Développer des jeux connectés au cloud avec Unity &amp; PlayFab</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity3d-gestion-des-donnees-avec-mysql-guide-complet/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-mysql-unity.jpg" alt="Unity3D Gestion des données avec MySql | Guide complet" loading="lazy"></div>
+          <h4>Unity3D Gestion des données avec MySql | Guide complet</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-firebase-authentification-et-bases-de-donnees-cloud/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-firebase-unity.jpg" alt="Unity &amp; Firebase Authentification et Bases de Données Cloud" loading="lazy"></div>
+          <h4>Unity &amp; Firebase Authentification et Bases de Données Cloud</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity3d-realisez-un-first-person-shooter-fps-guide-complet/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-fps-unity.jpg" alt="UNITY3D Réalisez un First Person Shooter-FPS | Guide complet" loading="lazy"></div>
+          <h4>UNITY3D Réalisez un First Person Shooter-FPS | Guide complet</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/debuter-avec-unity-et-le-3d-game-kit-sans-rediger-de-code/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-3d-game-kit.jpg" alt="Débuter avec Unity et le 3D Game Kit sans rédiger de code" loading="lazy"></div>
+          <h4>Débuter avec Unity et le 3D Game Kit sans rédiger de code</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/realiser-pong-en-90-min-maitriser-godot-par-la-pratique/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-godot"><img src="img/courses/udemy-godot-pong.jpg" alt="Réaliser Pong en 90 min : Maîtriser Godot par la pratique" loading="lazy"></div>
+          <h4>Réaliser Pong en 90 min : Maîtriser Godot par la pratique</h4>
+          <div class="course-tags"><span>Godot</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/python-tkinter-creation-dinterface-graphique/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-python"><img src="img/courses/udemy-python-tkinter.jpg" alt="Python &amp; Tkinter : Création d'interface graphique" loading="lazy"></div>
+          <h4>Python &amp; Tkinter : Création d'interface graphique</h4>
+          <div class="course-tags"><span>Python</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/creez-un-flappy-bird-like-avec-godot-sans-coder/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-godot"><img src="img/courses/udemy-flappy-bird-godot.jpg" alt="Créez un Flappy Bird Like avec Godot, sans coder !" loading="lazy"></div>
+          <h4>Créez un Flappy Bird Like avec Godot, sans coder !</h4>
+          <div class="course-tags"><span>Godot</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-et-maitriser-excel/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-bureautique"><img src="img/courses/udemy-excel.jpg" alt="Apprendre et Maîtriser Excel  de A à Z" loading="lazy"></div>
+          <h4>Apprendre et Maîtriser Excel  de A à Z</h4>
+          <div class="course-tags"><span>Bureautique</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-et-maitriser-power-point-2019-guide-complet/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-bureautique"><img src="img/courses/udemy-powerpoint.jpg" alt="Apprendre et Maitriser POWER POINT -  Guide complet" loading="lazy"></div>
+          <h4>Apprendre et Maitriser POWER POINT -  Guide complet</h4>
+          <div class="course-tags"><span>Bureautique</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/le-cours-complet-excel-vba-debutant-a-pro/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-bureautique"><img src="img/courses/udemy-excel-vba-pro.jpg" alt="Le Cours Complet Excel + VBA" loading="lazy"></div>
+          <h4>Excel + VBA</h4>
+          <div class="course-tags"><span>Bureautique</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/creer-son-site-internet-e-commerce-sans-etre-developpeur-web/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-web"><img src="img/courses/udemy-site-ecommerce.jpg" alt="Créer son site Internet E-Commerce sans être développeur web" loading="lazy"></div>
+          <h4>Créer son site Internet E-Commerce sans être développeur web</h4>
+          <div class="course-tags"><span>Web</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-windows-serveur-2019-et-le-reseau/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-server"><img src="img/courses/udemy-windows-server-2019.jpg" alt="Apprendre Windows Serveur 2019 et le Réseau" loading="lazy"></div>
+          <h4>Apprendre Windows Serveur 2019 et le Réseau</h4>
+          <div class="course-tags"><span>Server</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/debuter-avec-windows-server-2012-et-le-reseau/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-server"><img src="img/courses/udemy-windows-server-2012.jpg" alt="Débuter avec Windows Server 2012 et le réseau" loading="lazy"></div>
+          <h4>Débuter avec Windows Server 2012 et le réseau</h4>
+          <div class="course-tags"><span>Server</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/maitriser-le-montage-video-avec-adobe-premiere-cc-2017/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-video"><img src="img/courses/udemy-premiere-pro.jpg" alt="Maîtriser le montage Vidéo avec Adobe Première CC" loading="lazy"></div>
+          <h4>Maîtriser le montage Vidéo avec Adobe Première CC</h4>
+          <div class="course-tags"><span>Video</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/creer-une-application-android-facilement-sans-programmation/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-mobile"><img src="img/courses/udemy-android-sans-code.jpg" alt="Créer une application Android facilement sans programmation" loading="lazy"></div>
+          <h4>Créer une application Android facilement sans programmation</h4>
+          <div class="course-tags"><span>Mobile</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/creez-votre-premier-jeu-mobile-avec-godot-en-moins-de-2h/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-godot"><img src="img/courses/udemy-godot-mobile.jpg" alt="Créez votre premier jeu mobile avec Godot en moins de 2h" loading="lazy"></div>
+          <h4>Créez votre premier jeu mobile avec Godot en moins de 2h</h4>
+          <div class="course-tags"><span>Godot</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-maitriser-laudio-guide-ultime-partie-7/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-audio-part7.jpg" alt="Unity Maitriser l'audio | Guide Ultime Partie 7" loading="lazy"></div>
+          <h4>Unity Maitriser l'audio | Guide Ultime Partie 7</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-developpement-mobile-guide-ultime-partie-6/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-mobile-part6.jpg" alt="Unity Développement mobile | Guide Ultime Partie 6" loading="lazy"></div>
+          <h4>Unity Développement mobile | Guide Ultime Partie 6</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-realiser-des-jeux-en-2d-guide-ultime-partie-5/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-2d-part5.jpg" alt="Unity réaliser des jeux en 2D Guide Ultime Partie 5" loading="lazy"></div>
+          <h4>Unity réaliser des jeux en 2D | Guide Ultime Partie 5</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-lintelligence-artificelle-guide-ultime-partie-4/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-ia-part4.jpg" alt="Unity l'intelligence artificielle | Guide Ultime Partie 4" loading="lazy"></div>
+          <h4>Unity l'intelligence artificielle | Guide Ultime Partie 4</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-linterface-utilisateur-guide-ultime-partie-3/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-ui-part3.jpg" alt="Unity l'interface utilisateur | Guide Ultime Partie 3" loading="lazy"></div>
+          <h4>Unity l'interface utilisateur | Guide Ultime Partie 3</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-lanimation-3d-guide-ultime-partie-2/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-3d-part2.jpg" alt="Unity l'animation 3D | Guide Ultime Partie 2" loading="lazy"></div>
+          <h4>Unity l'animation 3D | Guide Ultime Partie 2</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-les-fondamentaux-le-guide-ultime-partie-1/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-fondamentaux-part1.jpg" alt="Unity les fondamentaux | Guide ultime Partie 1" loading="lazy"></div>
+          <h4>Unity les fondamentaux | Guide ultime Partie 1</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/unity-sans-code-dominez-visual-scripting-et-creez-vos-jeux/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-unity-visual-scripting.jpg" alt="Unity Sans Code : Dominez Visual Scripting et Créez Vos Jeux" loading="lazy"></div>
+          <h4>Unity Sans Code : Dominez Visual Scripting et Créez Vos Jeux</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/maitrisez-godot-de-linitiation-au-developpement-de-jeux/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-godot"><img src="img/courses/udemy-godot.jpg" alt="Maîtrisez Godot : De l'Initiation au Développement de jeux" loading="lazy"></div>
+          <h4>Maîtrisez Godot : De l'Initiation au Développement de jeux</h4>
+          <div class="course-tags"><span>Godot</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-le-c-c-sharp-de-debutant-a-expert/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-csharp"><img src="img/courses/udemy-csharp.jpg" alt="Apprendre le C# (C-Sharp) de débutant à Expert." loading="lazy"></div>
+          <h4>Apprendre le C# (C-Sharp) de débutant à Expert.</h4>
+          <div class="course-tags"><span>C#</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/utiliser-ollama-llm-creer-une-ia-locale-debutants/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-ia"><img src="img/courses/udemy-ollama.jpg" alt="Utiliser Ollama LLM : créer une IA locale débutants" loading="lazy"></div>
+          <h4>Utiliser Ollama LLM : créer une IA locale débutants</h4>
+          <div class="course-tags"><span>IA</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/debuter-et-apprendre-a-programmer-en-python/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-python"><img src="img/courses/udemy-python.jpg" alt="Débuter et apprendre a programmer en Python." loading="lazy"></div>
+          <h4>Débuter et apprendre a programmer en Python.</h4>
+          <div class="course-tags"><span>Python</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/godot-engine-de-lanimation-3d-a-vos-jeux-video/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-godot"><img src="img/courses/udemy-godot-animation.jpg" alt="Godot Engine : De l’Animation 3D à vos Jeux Vidéo" loading="lazy"></div>
+          <h4>Godot Engine : De l’Animation 3D à vos Jeux Vidéo</h4>
+          <div class="course-tags"><span>Godot</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-et-maitriser-microsoft-access-2016/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-bureautique"><img src="img/courses/udemy-access.jpg" alt="Apprendre et maîtriser Microsoft ACCESS" loading="lazy"></div>
+          <h4>Apprendre et maîtriser Microsoft ACCESS</h4>
+          <div class="course-tags"><span>Bureautique</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-les-macros-et-le-langage-vba-avec-excel-2016/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-bureautique"><img src="img/courses/udemy-vba-excel.jpg" alt="Apprendre les Macros et le langage VBA avec Excel" loading="lazy"></div>
+          <h4>Apprendre les Macros et le langage VBA avec Excel</h4>
+          <div class="course-tags"><span>Bureautique</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/microsoft-word-le-guide-complet-de-debutant-a-expert/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-bureautique"><img src="img/courses/udemy-word.jpg" alt="Microsoft Word | Le guide Complet de Débutant à Expert." loading="lazy"></div>
+          <h4>Microsoft Word | Le guide Complet de Débutant à Expert.</h4>
+          <div class="course-tags"><span>Bureautique</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/apprendre-le-html5-et-css3-debutant-a-expert/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-web"><img src="img/courses/udemy-html5-css3.jpg" alt="Apprendre le HTML5 et CSS3 | Débutant à Expert Guide complet" loading="lazy"></div>
+          <h4>Apprendre le HTML5 et CSS3 | Débutant à Expert Guide complet</h4>
+          <div class="course-tags"><span>Web</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/pico-8-programmer-des-jeux-video-en-lua/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-lua"><img src="img/courses/udemy-pico8.jpg" alt="PICO-8 Programmer des jeux vidéo en L.U.A" loading="lazy"></div>
+          <h4>PICO-8 Programmer des jeux vidéo en L.U.A</h4>
+          <div class="course-tags"><span>LUA</span><span>Udemy</span></div>
+        </a>
+        <a href="https://www.udemy.com/course/le-guide-ultime-du-developpement-de-jeux-avec-unity/" target="_blank" rel="noopener" class="course-card">
+          <div class="course-thumb thumb-unity"><img src="img/courses/udemy-guide-ultime-unity.jpg" alt="Le guide ultime du développement de jeux avec Unity" loading="lazy"></div>
+          <h4>Le guide ultime du développement de jeux avec Unity</h4>
+          <div class="course-tags"><span>Unity</span><span>Udemy</span></div>
+        </a>
+        </div><!-- /carousel-viewport -->
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div><!-- /carousel-wrapper -->
+      <!-- Compétences pédagogiques -->
+      <h3 class="projects-subtitle" data-animate="fade-up">Domaines de formation</h3>
+      <div class="trainer-domains" data-animate="fade-up" data-delay="200">
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          Unity & Jeux vidéo
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          C# & Programmation
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Python
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Word & Bureautique
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          Excel & Tableurs
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a3 3 0 003 3h8a3 3 0 003-3V8M12 14v2"/></svg>
+          Réseaux & Systèmes
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 14.76V3.5a2.5 2.5 0 00-5 0v11.26a4.5 4.5 0 105 0z"/></svg>
+          Réalité virtuelle & AR
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Applications mobiles
+        </div>
+        <div class="domain-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          LUA & Scripting
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROJECTS -->
+  <section class="section section-projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">04 - Projets</span>
+        <h2 class="section-title">Mes réalisations</h2>
+      </div>
+
+            <h3 class="projects-subtitle" data-animate="fade-up">Logiciels &amp; applications</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+        <button class="carousel-btn carousel-prev" aria-label="Precedent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="soft-carousel">
+        <article class="project-card">
+          <div class="project-visual"><img src="img/dames-1.png" alt="Interface du jeu Dames" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Dames - Jeu de strategie Unity</h3>
+            <p>Jeu de dames avec interface moderne, adversaire Minimax a profondeur reglable. Disponible sur PC et en version Web.</p>
+            <div class="project-tags"><span>Unity</span><span>C#</span><span>Minimax</span><span>PC &amp; Web</span></div>
+            <div class="project-links-row">
+              <a href="https://psi-informatique.eu/software/Dames/" target="_blank" rel="noopener" class="project-link">Site web <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              <a href="https://apps.microsoft.com/detail/9pb2p7bc6n8m" target="_blank" rel="noopener" class="project-link">Microsoft Store <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual"><img src="img/dir-1.png" alt="Interface Desktop Icon Restore" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Desktop Icon Restore</h3>
+            <p>Sauvegarde et restaure la position des icones du bureau en un clic. Multi-ecrans, 100% prive.</p>
+            <div class="project-tags"><span>Windows</span><span>Microsoft Store</span><span>Gratuit</span></div>
+            <div class="project-links-row">
+              <a href="https://psi-informatique.eu/software/DesktopIconRestore/" target="_blank" rel="noopener" class="project-link">Site web <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              <a href="https://apps.microsoft.com/detail/9P25CTNRZBVB" target="_blank" rel="noopener" class="project-link">Microsoft Store <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual"><img src="img/wolit-1.png" alt="Interface WOLit" loading="lazy"></div>
+          <div class="project-info">
+            <h3>WOLit - Wake On LAN Tool</h3>
+            <p>Outil WOL pour demarrer des machines a distance. Scan reseau automatique, verification d etat. 100% local.</p>
+            <div class="project-tags"><span>WOL</span><span>Reseau</span><span>Microsoft Store</span><span>Gratuit</span></div>
+            <div class="project-links-row">
+              <a href="https://psi-informatique.eu/software/WolIt/" target="_blank" rel="noopener" class="project-link">Site web <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+              <a href="https://apps.microsoft.com/detail/9NX6Z3R2Q73T" target="_blank" rel="noopener" class="project-link">Microsoft Store <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual project-visual-sticky">
+            <div class="sticky-preview">
+              <div class="sticky-note sticky-yellow"><span class="sticky-title">Note 1</span><span class="sticky-text">Idee a retenir</span></div>
+              <div class="sticky-note sticky-blue"><span class="sticky-title">Note 2</span><span class="sticky-text">Todo list</span></div>
+              <div class="sticky-note sticky-green"><span class="sticky-title">Note 3</span><span class="sticky-text">Rappel</span></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>StickyWeb - Extension Chrome</h3>
+            <p>Notes personnalisables sur les pages web. Todo, images, dessin, rappels, gestionnaire complet. Manifest V3.</p>
+            <div class="project-tags"><span>JavaScript</span><span>Chrome Extension</span><span>Gratuit</span></div>
+            <a href="https://psi-informatique.eu/software/StickyWeb/sticky-notes.html" target="_blank" rel="noopener" class="project-link">Decouvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual"><img src="img/projects/gitdesk-home.svg" alt="GitDesk - Interface" loading="lazy"></div>
+          <div class="project-info">
+            <h3>GitDesk - Gestionnaire Git</h3>
+            <p>Application Windows elegante et intuitive pour gerer vos projets Git localement. Interface claire, en francais. Open source MIT.</p>
+            <div class="project-tags"><span>C#</span><span>Git</span><span>Windows</span><span>MIT</span></div>
+            <a href="https://psi-informatique.eu/software/GitDesk/" target="_blank" rel="noopener" class="project-link">Decouvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+          </div>
+        </article>
+        </div><!-- /carousel-viewport -->
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="soft-dots"></div>
+      </div><!-- /carousel-wrapper -->
+
+<h3 class="projects-subtitle" data-animate="fade-up"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M14 12h4M9 9v6M15 9v6"/></svg> Jeux publiés sur itch.io</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+        <button class="carousel-btn carousel-prev" aria-label="Précédent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="games-carousel">
+        <a href="https://pareinjeanphilippe.itch.io/snake" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="520">
+          <div class="project-visual"><img src="img/projects/snake.jpg" alt="Snake" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Snake</h3>
+            <p>The snake game.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/snake-pico-8" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="480">
+          <div class="project-visual"><img src="img/projects/snake-pico-8.jpg" alt="Snake PICO-8" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Snake PICO-8</h3>
+            <p>Le grand classique du Snake développé sous PICO-8.</p>
+            <div class="project-tags"><span>PICO-8</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/shmup-pico-8" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="440">
+          <div class="project-visual"><img src="img/projects/shmup-pico-8.gif" alt="Shmup Pico-8" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Shmup Pico-8</h3>
+            <p>Shoot'em up développé sous PICO-8.</p>
+            <div class="project-tags"><span>PICO-8</span><span>Shooter</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/asteroid-clone" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="400">
+          <div class="project-visual"><img src="img/projects/asteroid-clone.jpg" alt="Astéroïde the clone" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Astéroïde the clone</h3>
+            <p>Clone d'astéroïde développé sous Unity.</p>
+            <div class="project-tags"><span>Unity</span><span>Shooter</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/race-car" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="280">
+          <div class="project-visual"><img src="img/projects/race-car.jpg" alt="Race Car" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Race Car</h3>
+            <p>Course en 3D, première physique Unity.</p>
+            <div class="project-tags"><span>Unity</span><span>Racing</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/cubesymphony" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="200">
+          <div class="project-visual"><img src="img/projects/cubesymphony.png" alt="CubeSymphony" loading="lazy"></div>
+          <div class="project-info">
+            <h3>CubeSymphony</h3>
+            <p>Clone du jeu de mémoire Simon.</p>
+            <div class="project-tags"><span>Unity</span><span>Puzzle</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/breakout" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="160">
+          <div class="project-visual"><img src="img/projects/breakout.png" alt="BreakOut" loading="lazy"></div>
+          <div class="project-info">
+            <h3>BreakOut</h3>
+            <p>Le classique casse-briques.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/river-raid" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="80">
+          <div class="project-visual"><img src="img/projects/river-raid.jpg" alt="River Raid" loading="lazy"></div>
+          <div class="project-info">
+            <h3>River Raid</h3>
+            <p>Ma version simplifiée du jeu mythique River Raid.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/classic-pong" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="40">
+          <div class="project-visual"><img src="img/projects/classic-pong.jpg" alt="Pong Classic" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Pong Classic</h3>
+            <p>Jeu classique d'arcade qui simule le tennis de table.</p>
+            <div class="project-tags"><span>Unity</span><span>Sports</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/flappy-godot" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="0">
+          <div class="project-visual"><img src="img/projects/flappy-godot.jpg" alt="Flappy Godot" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Flappy Godot</h3>
+            <p>Faites voler l'oiseau et évitez les obstacles.</p>
+            <div class="project-tags"><span>Godot</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/pacman-3d" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="120">
+          <div class="project-visual"><img src="img/projects/pacman-3d.png" alt="Pacman 3D" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Pacman 3D</h3>
+            <p>Clone du jeu Pac-Man en 3D.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/tours-de-hano" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="240">
+          <div class="project-visual"><img src="img/projects/tours-de-hano.jpg" alt="Tours de Hanoï" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Tours de Hanoï</h3>
+            <p>Jeu de réflexion mathématique.</p>
+            <div class="project-tags"><span>Unity</span><span>Puzzle</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/dino-gravity" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="320">
+          <div class="project-visual"><img src="img/projects/dino-gravity.png" alt="Dino Gravity v2" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Dino Gravity v2</h3>
+            <p>Jeu d'action avec gravité inversée.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/the-flame" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="360">
+          <div class="project-visual"><img src="img/projects/the-flame.jpg" alt="The Flame" loading="lazy"></div>
+          <div class="project-info">
+            <h3>The Flame</h3>
+            <p>Aidez la flamme à allumer son briquet.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        </div><!-- /carousel-viewport -->
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="games-dots"></div>
+      </div><!-- /carousel-wrapper -->
+
+      <h3 class="projects-subtitle projects-subtitle-github" data-animate="fade-up"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg> Projets open source</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+        <button class="carousel-btn carousel-prev" aria-label="Precedent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="github-carousel">
+        <a href="https://github.com/jpparein/Platformer-Assets" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/platformer-assets.svg" alt="Platformer Assets" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Platformer Assets</h3>
+            <p>Assets et ressources pour le projet Unity Platformer.</p>
+            <div class="project-tags"><span>Unity</span><span>Assets</span></div>
+          </div>
+        </a>
+        <a href="https://github.com/jpparein/PSI-IP-Scanner" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/ip-scanner.svg" alt="PSI IP Scanner" loading="lazy"></div>
+          <div class="project-info">
+            <h3>PSI IP Scanner</h3>
+            <p>Outil de scan reseau pour decouvrir les appareils connectes sur un reseau local.</p>
+            <div class="project-tags"><span>C#</span><span>Reseau</span><span>MIT</span></div>
+          </div>
+        </a>
+        <a href="https://github.com/jpparein/Taquin" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/taquin-numbers.png" alt="Taquin 4x4 Unity" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Taquin 4x4 - Jeu Unity</h3>
+            <p>Jeu de taquin complet. Melange resoluble, chronometre, verification de victoire.</p>
+            <div class="project-tags"><span>Unity</span><span>C#</span><span>Tutoriel</span><span>MIT</span></div>
+          </div>
+        </a>
+        <a href="https://github.com/jpparein/Whack-a-mole" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/whackamole.webp" alt="Whack-a-mole Unity" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Whack-a-mole - Jeu Unity</h3>
+            <p>Jeu d'arcade 2D. Le joueur doit frapper les taupes lorsqu'elles sortent de leurs trous pour marquer un maximum de points.</p>
+            <div class="project-tags"><span>Unity</span><span>C#</span></div>
+          </div>
+        </a>
+        <a href="https://github.com/jpparein/Platformer" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/platformer-preview.png" alt="Platformer Unity 2D" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Platformer - Tutoriel Unity 2D</h3>
+            <p>Projet Unity 2D en evolution, support d'une serie de tutoriels YouTube.</p>
+            <div class="project-tags"><span>Unity</span><span>C#</span><span>Tutoriel</span></div>
+          </div>
+        </a>
+        <a href="https://github.com/jpparein/raspberry-pi-station-meteo" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/station-meteo-interface.png" alt="Station Meteo Raspberry Pi" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Station Meteo Raspberry Pi</h3>
+            <p>Station meteo complete avec Raspberry Pi 2B, capteur DHT22, interface web PWA, historique SQLite, previsions Open-Meteo.</p>
+            <div class="project-tags"><span>Python</span><span>Raspberry Pi</span><span>SQLite</span><span>MIT</span></div>
+          </div>
+        </a>
+        </div><!-- /carousel-viewport -->
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="github-dots"></div>
+      </div><!-- /carousel-wrapper -->
+
+      <h3 class="projects-subtitle" data-animate="fade-up">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+        Chaînes YouTube
+      </h3>
+      <div class="projects-grid projects-grid-youtube">
+        <a href="https://www.youtube.com/@info-tuto" target="_blank" rel="noopener" class="project-card project-card-youtube" data-animate="fade-up" data-delay="0">
+          <div class="project-visual project-visual-youtube" style="background-image:url('img/projects/banner-infotuto.jpg')">
+            <div class="yt-overlay"></div>
+            <div class="yt-header">
+              <img class="yt-avatar" src="img/projects/avatar-infotuto.jpg" alt="" loading="lazy">
+              <div class="yt-meta">
+                <span class="yt-channel-name">InfoTuto</span>
+                <span class="yt-meta-line"><strong>27,8K</strong> abonnés</span>
+              </div>
+              <div class="yt-play"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>InfoTuto</h3>
+            <p>Chaîne de tutoriels généraliste sur l'informatique technique.</p>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/@UplnGaming" target="_blank" rel="noopener" class="project-card project-card-youtube" data-animate="fade-up" data-delay="80">
+          <div class="project-visual project-visual-youtube" style="background-image:url('img/projects/banner-uplngaming.jpg')">
+            <div class="yt-overlay"></div>
+            <div class="yt-header">
+              <img class="yt-avatar" src="img/projects/avatar-uplngaming.jpg" alt="" loading="lazy">
+              <div class="yt-meta">
+                <span class="yt-channel-name">UPLN Gaming</span>
+                <span class="yt-meta-line"><strong>15,8K</strong> abonnés</span>
+              </div>
+              <div class="yt-play"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>UPLN Gaming</h3>
+            <p>Développement de jeux vidéo sur Unity, Godot et fantasy consoles comme Pico-8.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section class="section section-media" id="media">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">05 - Médias</span>
+        <h2 class="section-title">Publications, médias et références</h2>
+      </div>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+        <button class="carousel-btn carousel-prev" aria-label="Précédent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="media-carousel">
+          <a href="https://www.bastienbricout.com/formation-excel/" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/comparatif-excel.jpg" alt="Comparatif Excel" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-comparatif">Comparatif</span><span class="media-year">2026</span></div>
+              <h3>Formation Excel classée 9/10</h3>
+              <p>Formation classée quatrième dans un comparatif et présentée comme le meilleur rapport qualité-prix.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+          <a href="https://www.journaldugeek.com/2019/01/02/resolution-2019-japprends-a-creer-jeux-applis-grace-a-udemy/" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/journal-dugeek-unity.jpg" alt="Journal du Geek - Formation Unity" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-partenaire">Article partenaire</span><span class="media-year">2019</span></div>
+              <h3>Formation Unity et Vuforia présentée</h3>
+              <p>Présentation de mon cursus consacré au développement de jeux et d'applications en réalité augmentée avec Unity et Vuforia.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+          <a href="https://www.clubic.com/pro/formation-en-ligne/article-850561-1-formation-ligne-cours-udemy-preferes-suivre-absolument-former.html" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/clubic-unity.jpg" alt="Clubic - Sélection Unity" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-selection">Sélection média</span><span class="media-year">2019</span></div>
+              <h3>Formation Unity sélectionnée par Clubic</h3>
+              <p>La formation Maîtriser Unity 2018 et C# a été intégrée au dossier consacré aux meilleurs cours Udemy 2019.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+          <a href="https://www.clubic.com/bons-plans/formation-bon-plan/actualite-867048-bon-plan-word-excel-powerpoint-outlook-maitrisez-microsoft-office.html" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/clubic-excel.jpg" alt="Clubic - Formation Excel" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-selection">Sélection média</span><span class="media-year">2019</span></div>
+              <h3>Formation Excel présentée par Clubic</h3>
+              <p>La formation Apprendre et maîtriser Excel de A à Z a été mise en avant dans une sélection consacrée à Microsoft Office.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+          <a href="https://korben.info/faire-formation-video.html" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/korben-formation.jpg" alt="Korben - Témoignage" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-temoignage">Témoignage</span><span class="media-year">2017</span></div>
+              <h3>Témoignage repris sur Korben</h3>
+              <p>Retour d'expérience de formateur repris dans un article sponsorisé par Udemy consacré à la création de formations vidéo.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+          <a href="https://www.clubic.com/auteur/1959-jean-philippe-parein.html" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/clubic-auteur.jpg" alt="Clubic - Profil auteur" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-publication">Publications</span><span class="media-year">2019-2023</span></div>
+              <h3>Auteur de tutoriels pour Clubic</h3>
+              <p>Publication de nombreux tutoriels pratiques consacrés à Microsoft Excel, PowerPoint et Outlook.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+          <a href="https://bibli.ville-fachesthumesnil.fr/index.php?id=84900&lvl=author_see" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/mediatheques-formations.jpg" alt="Médiathèques - Formations" loading="lazy"></div>
+            <div class="media-info">
+              <div class="media-meta"><span class="media-badge badge-diffusion">Diffusion institutionnelle</span><span class="media-year">2023</span></div>
+              <h3>25 formations référencées en médiathèque</h3>
+              <p>Formations vidéo accessibles via Skilleos et Toutapprendre dans différents réseaux de médiathèques françaises.</p>
+              <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
+            </div>
+          </a>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="media-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">06 - Contact</span>
+        <h2 class="section-title">On en parle ?</h2>
+      </div>
+      <div class="contact-grid" data-animate="fade-up" data-delay="100">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" placeholder="Projet, formation, emploi...">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet, votre offre d'emploi ou votre besoin de formation..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Envoyer par email
+          </button>
+        </form>
+        <div class="contact-links">
+          <a href="https://github.com/jpparein" target="_blank" rel="noopener" class="contact-link-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/jean-philippe-parein" target="_blank" rel="noopener" class="contact-link-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://pareinjeanphilippe.itch.io" target="_blank" rel="noopener" class="contact-link-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="10" y1="10" x2="10" y2="14"/><line x1="14" y1="10" x2="14" y2="14"/></svg>
+            itch.io
+          </a>
+          <a href="https://psi-informatique.eu/" target="_blank" rel="noopener" class="contact-link-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            psi-informatique.eu
+          </a>
+          <a href="https://www.youtube.com/@info-tuto" target="_blank" rel="noopener" class="contact-link-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            InfoTuto
+          </a>
+          <a href="https://www.youtube.com/@UplnGaming" target="_blank" rel="noopener" class="contact-link-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            UPLN Gaming
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Jean-Philippe Parein. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="https://psi-informatique.eu/" target="_blank" rel="noopener">PSI Informatique</a>
+        <a href="https://pareinjeanphilippe.itch.io" target="_blank" rel="noopener">itch.io</a>
+        <a href="https://github.com/jpparein" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.youtube.com/@jeanphilippeparein" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
