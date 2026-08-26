@@ -21,6 +21,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#about"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Profil</a></li>
         <li><a href="#experience"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Parcours</a></li>
+        <li><a href="#interventions"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Interventions</a></li>
         <li><a href="#trainer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 12 3 12 0v-5"/></svg>Formateur</a></li>
         <li><a href="#projects"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Projets</a></li>
         <li><a href="#media"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Médias</a></li>
@@ -341,6 +342,7 @@
           </div>
         </div>
         <h3 class="timeline-subtitle">Expériences antérieures</h3>
+        <div class="timeline-older" id="timeline-older" style="display:none;">
         <div class="timeline-item" data-animate="fade-up" data-delay="350">
           <div class="timeline-date-col">
             <span class="timeline-date">1998 à 2003</span>
@@ -379,6 +381,8 @@
             </div>
           </div>
         </div>
+        </div><!-- /timeline-older -->
+        <button class="timeline-toggle" id="timeline-toggle" type="button">Voir plus ↓</button>
       </div>
       <div class="section-header" data-animate="fade-up" style="margin-top: 3rem;">
         <h2 class="section-title">Diplômes et formations</h2>
@@ -407,11 +411,196 @@
       </div>
     </div>
   </section>
+  <!-- INTERVENTIONS -->
+  <section class="section section-projects" id="interventions">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">03 - Interventions techniques</span>
+        <h2>Mes réalisations</h2>
+        <p class="section-subtitle">Quelques interventions techniques réalisées pour mes clients</p>
+      </div>
+
+      <h3 class="projects-subtitle" data-animate="fade-up">Installations &amp; réseaux</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100" data-smooth>
+        <button class="carousel-btn carousel-prev" aria-label="Précédent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="intervention-carousel-1">
+          <a href="https://psi-informatique.eu/mise-en-place-dun-acces-vpn-securise-avec-authentification-forte-2fa/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/vpn-2fa.jpg" alt="VPN sécurisé 2FA" loading="lazy"></div>
+            <h4>Accès VPN sécurisé avec authentification forte (2FA)</h4>
+            <div class="course-tags"><span>Réseau</span><span>Sécurité</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/station-de-travail-professionnelle-windows-10-en-anglais-et-forte-puissance-graphique/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/station-travail.jpg" alt="Station de travail" loading="lazy"></div>
+            <h4>Station de travail pro Windows 10 – Forte puissance graphique</h4>
+            <div class="course-tags"><span>Windows</span><span>Pro</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/assemblage-dun-pc-bureautique-moderne-et-evolutif-avec-windows-11-solution-sur-mesure-pour-particulier/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/pc-bureautique.jpg" alt="PC bureautique Windows 11" loading="lazy"></div>
+            <h4>Assemblage PC bureautique moderne et évolutif avec Windows 11</h4>
+            <div class="course-tags"><span>Assemblage</span><span>Windows</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/assemblage-dun-pc-client-une-machine-equilibree-rapide-et-evolutive/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/pc-client.jpg" alt="PC client" loading="lazy"></div>
+            <h4>Assemblage PC client – Machine équilibrée, rapide et évolutive</h4>
+            <div class="course-tags"><span>Assemblage</span><span>Sur mesure</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/installation-et-configuration-du-role-services-bureau-a-distance-terminal-server-tse-sur-serveur-windows-avec-integration-des-licences-rds/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/terminal-server.jpg" alt="Terminal Server" loading="lazy"></div>
+            <h4>Services Bureau à distance (Terminal Server) – Licences RDS</h4>
+            <div class="course-tags"><span>Serveur</span><span>Réseau</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-dun-enregistreur-de-videosurveillance-solution-budget-cameras-existantes-conservees-remise-en-service-rapide/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/videosurveillance.jpg" alt="Enregistreur vidéosurveillance" loading="lazy"></div>
+            <h4>Remplacement enregistreur vidéosurveillance – caméras conservées</h4>
+            <div class="course-tags"><span>Vidéosurveillance</span><span>Budget</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/extension-de-lespace-de-stockage-dun-nas-synology-en-raid-1-shr/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/nas-synology.jpg" alt="NAS Synology" loading="lazy"></div>
+            <h4>Extension stockage NAS Synology en RAID 1 (SHR)</h4>
+            <div class="course-tags"><span>NAS</span><span>Stockage</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-dun-nas-vieillissant-par-un-synology-rs1221/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/nas-rs1221.png" alt="Synology RS1221+" loading="lazy"></div>
+            <h4>Remplacement NAS vieillissant par Synology RS1221+</h4>
+            <div class="course-tags"><span>NAS</span><span>Migration</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/ransomware-sur-serveur-restauration-des-donnees-sans-payer-grace-aux-cliches-instantanes-windows-server/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/ransomware.jpg" alt="Ransomware serveur" loading="lazy"></div>
+            <h4>Ransomware sur serveur – Restauration sans payer (clichés instantanés)</h4>
+            <div class="course-tags"><span>Sécurité</span><span>Sauvegarde</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/preparation-dun-nvr-hikvision-acusense-ds-7700-series-avec-des-disques-wd-purple-6-to-concus-pour-la-videosurveillance-24-7/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/nvr-hikvision.jpg" alt="NVR Hikvision" loading="lazy"></div>
+            <h4>Système vidéosurveillance IP – NVR Hikvision AcuSense</h4>
+            <div class="course-tags"><span>Vidéosurveillance</span><span>IP</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/mise-en-service-dun-serveur-hpe-proliant-ml150-gen9-pour-pme/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/serveur-hpe.jpg" alt="Serveur HPE ProLiant" loading="lazy"></div>
+            <h4>Mise en service serveur HPE ProLiant ML150 Gen9 pour PME</h4>
+            <div class="course-tags"><span>Serveur</span><span>PME</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-dun-systeme-daffichage-dynamique-couteux-par-une-solution-libre-et-autonome/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/affichage-dynamique.jpg" alt="Affichage dynamique" loading="lazy"></div>
+            <h4>Affichage dynamique – Remplacement solution coûteuse par du libre</h4>
+            <div class="course-tags"><span>Libre</span><span>Affichage</span></div>
+          </a>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots"></div>
+      </div>
+
+      <h3 class="projects-subtitle" data-animate="fade-up">Réparations &amp; dépannages</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="150" data-smooth>
+        <button class="carousel-btn carousel-prev" aria-label="Précédent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="intervention-carousel-2">
+          <a href="https://psi-informatique.eu/remise-en-service-dun-environnement-informatique-ancien-sous-windows-98/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/windows-98.jpg" alt="Windows 98" loading="lazy"></div>
+            <h4>Remise en service d'un environnement ancien sous Windows 98</h4>
+            <div class="course-tags"><span>Rétro</span><span>Patrimoine</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/reinitialisation-windows-11-home-suite-a-un-plantage-remise-en-etat-dun-systeme-devenu-incoherent/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/win11-reset.jpg" alt="Réinitialisation Windows 11" loading="lazy"></div>
+            <h4>Réinitialisation Windows 11 Home – Système devenu incohérent</h4>
+            <div class="course-tags"><span>Windows</span><span>Système</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remise-en-etat-dun-pc-hp-defaut-memoire-et-pile-cmos-hs/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/pc-hp-memoire.jpg" alt="PC HP mémoire" loading="lazy"></div>
+            <h4>Remise en état PC HP – Défaut mémoire et pile CMOS HS</h4>
+            <div class="course-tags"><span>Matériel</span><span>Diagnostic</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/reparation-atelier-pc-en-redemarrage-en-boucle-diagnostic-ssd-defaillant/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/ssd-defaillant.jpg" alt="SSD défaillant" loading="lazy"></div>
+            <h4>Réparation atelier – PC en redémarrage en boucle (SSD défaillant)</h4>
+            <div class="course-tags"><span>Diagnostic</span><span>SSD</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-de-disque-dur-par-un-modele-de-plus-grande-capacite-avec-migration-complete-du-systeme/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/migration-disque-dur.jpg" alt="Migration disque dur" loading="lazy"></div>
+            <h4>Migration complète du système sur disque dur plus grand</h4>
+            <div class="course-tags"><span>Stockage</span><span>Migration</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/changement-dalimentation-pour-ce-pc-gamer-qui-ne-voulait-plus-demarrer/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/pc-gamer-alim.jpg" alt="Alimentation PC gamer" loading="lazy"></div>
+            <h4>Changement d'alimentation pour PC gamer qui ne démarrait plus</h4>
+            <div class="course-tags"><span>Matériel</span><span>Gaming</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/bsod-et-erreurs-whea-sur-un-pc-gaming-quand-le-fautif-se-cache-dans-le-stockage-nvme/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/bsod-nvme.jpg" alt="BSOD PC gaming NVMe" loading="lazy"></div>
+            <h4>BSOD et erreurs WHEA sur PC gaming – fautif dans le NVMe</h4>
+            <div class="course-tags"><span>Diagnostic</span><span>Gaming</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-dun-disque-dur-mecanique-hs-par-un-ssd-a-petit-budget-seconde-vie-pour-un-portable-asus/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/ssd-asus.jpg" alt="SSD portable ASUS" loading="lazy"></div>
+            <h4>SSD à petit budget – Seconde vie pour portable ASUS</h4>
+            <div class="course-tags"><span>SSD</span><span>Portable</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-de-disque-dur-par-ssd-remise-a-niveau-dun-portable-i5/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/ssd-i5.jpg" alt="SSD portable i5" loading="lazy"></div>
+            <h4>SSD 512 Go – Seconde vie pour ordinateur portable Intel i5</h4>
+            <div class="course-tags"><span>SSD</span><span>Remise à niveau</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-de-stockage-sur-poste-client-nvme-en-fin-de-vie/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/nvme-poste.jpg" alt="NVMe poste client" loading="lazy"></div>
+            <h4>Remplacement de stockage NVMe en fin de vie sur poste client</h4>
+            <div class="course-tags"><span>NVMe</span><span>Poste client</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remplacement-dune-batterie-interne-sur-pc-portable-acer/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/batterie-acer.jpg" alt="Batterie PC portable Acer" loading="lazy"></div>
+            <h4>Remplacement batterie interne sur PC portable Acer</h4>
+            <div class="course-tags"><span>Matériel</span><span>Portable</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/preparation-dun-macbook-pro-14-pouces-haut-de-gamme-avec-clavier-souris-office-final-cut-pro-cameras-nas-et-vpn/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/macbook-pro-14.jpg" alt="MacBook Pro 14 pouces" loading="lazy"></div>
+            <h4>Préparation MacBook Pro 14 pouces – Office, Final Cut, caméras, NAS &amp; VPN</h4>
+            <div class="course-tags"><span>Mac</span><span>Réseau</span></div>
+          </a>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots"></div>
+      </div>
+
+      <h3 class="projects-subtitle" data-animate="fade-up">Développement &amp; Projets spéciaux</h3>
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="200" data-smooth>
+        <button class="carousel-btn carousel-prev" aria-label="Précédent">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-viewport" id="intervention-carousel-3">
+          <a href="https://psi-informatique.eu/session-de-formation-microsoft-word-en-presentiel-elka-france/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/formation-word.png" alt="Formation Word ELKA France" loading="lazy"></div>
+            <h4>Formation Microsoft Word en présentiel – ELKA France</h4>
+            <div class="course-tags"><span>Formation</span><span>Word</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/participation-au-developpement-de-lapplication-vr-unity-de-la-capsule-virtysens/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/virtysens-vr.png" alt="VirtySens VR Unity" loading="lazy"></div>
+            <h4>Application VR Unity – Capsule VirtySens</h4>
+            <div class="course-tags"><span>Unity</span><span>VR</span></div>
+          </a>
+          <a href="https://psi-informatique.eu/remise-en-etat-et-reverse-engineering-dune-borne-interactive-engie-cop21-2015/" target="_blank" rel="noopener" class="intervention-card">
+            <div class="course-thumb"><img src="img/interventions/borne-engie.jpg" alt="Borne interactive ENGIE" loading="lazy"></div>
+            <h4>Borne interactive ENGIE – Smarty21 (COP21) – Réactivation</h4>
+            <div class="course-tags"><span>Hardware</span><span>Rétro</span></div>
+          </a>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Suivant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-dots"></div>
+      </div>
+
+    </div>
+  </section>
   <!-- FORMATEUR -->
   <section class="section section-trainer" id="trainer">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-tag">03 - Formateur</span>
+        <span class="section-tag">04 - Formateur</span>
         <h2 class="section-title">Transmission des connaissances</h2>
       </div>
       <div class="trainer-intro" data-animate="fade-up" data-delay="100">
@@ -474,7 +663,7 @@
       </div>
       <!-- Toutes les formations - Carrousel 3 lignes -->
       <h3 class="projects-subtitle" data-animate="fade-up">Quelques-unes de mes formations</h3>
-      <div class="carousel-wrapper" data-animate="fade-up" data-delay="150">
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="150" data-smooth>
         <button class="carousel-btn carousel-prev" aria-label="Précédent">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
@@ -786,12 +975,12 @@
   <section class="section section-projects" id="projects">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-tag">04 - Projets</span>
+        <span class="section-tag">05 - Projets</span>
         <h2 class="section-title">Mes réalisations</h2>
       </div>
 
             <h3 class="projects-subtitle" data-animate="fade-up">Logiciels &amp; applications</h3>
-      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100" data-smooth>
         <button class="carousel-btn carousel-prev" aria-label="Precedent">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
@@ -864,7 +1053,7 @@
       </div><!-- /carousel-wrapper -->
 
 <h3 class="projects-subtitle" data-animate="fade-up"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M14 12h4M9 9v6M15 9v6"/></svg> Jeux publiés sur itch.io</h3>
-      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100" data-smooth>
         <button class="carousel-btn carousel-prev" aria-label="Précédent">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
@@ -989,7 +1178,7 @@
       </div><!-- /carousel-wrapper -->
 
       <h3 class="projects-subtitle projects-subtitle-github" data-animate="fade-up"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg> Projets open source</h3>
-      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100" data-smooth>
         <button class="carousel-btn carousel-prev" aria-label="Precedent">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
@@ -1096,10 +1285,10 @@
   <section class="section section-media" id="media">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-tag">05 - Médias</span>
+        <span class="section-tag">06 - Médias</span>
         <h2 class="section-title">Publications, médias et références</h2>
       </div>
-      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100">
+      <div class="carousel-wrapper" data-animate="fade-up" data-delay="100" data-smooth>
         <button class="carousel-btn carousel-prev" aria-label="Précédent">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
@@ -1180,7 +1369,7 @@
   <section class="section section-contact" id="contact">
     <div class="container">
       <div class="section-header" data-animate="fade-up">
-        <span class="section-tag">06 - Contact</span>
+        <span class="section-tag">07 - Contact</span>
         <h2 class="section-title">On en parle ?</h2>
       </div>
       <div class="contact-grid" data-animate="fade-up" data-delay="100">

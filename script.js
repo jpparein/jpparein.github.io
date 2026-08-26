@@ -14,22 +14,18 @@
   const sections = document.querySelectorAll('.section, .hero');
   const navAnchors = document.querySelectorAll('.nav-links a');
 
-  // Scroll state
   let lastScroll = 0;
   window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    nav.classList.toggle('scrolled', scrollY > 40);
-    lastScroll = scrollY;
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+    lastScroll = window.scrollY;
   }, { passive: true });
 
-  // Mobile toggle
   navToggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     navToggle.classList.toggle('active');
     navToggle.setAttribute('aria-expanded', isOpen);
   });
 
-  // Close mobile nav on link click
   navAnchors.forEach(a => {
     a.addEventListener('click', () => {
       navLinks.classList.remove('open');
@@ -38,7 +34,6 @@
     });
   });
 
-  // Active section highlight
   const observerNav = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -49,12 +44,10 @@
       }
     });
   }, { threshold: 0.3 });
-
   sections.forEach(s => observerNav.observe(s));
 
   /* ─── SCROLL ANIMATIONS ─── */
   const animatedElements = document.querySelectorAll('[data-animate]');
-
   if (prefersReducedMotion) {
     animatedElements.forEach(el => el.classList.add('visible'));
   } else {
@@ -62,14 +55,11 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const delay = parseInt(entry.target.dataset.delay) || 0;
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, delay);
+          setTimeout(() => entry.target.classList.add('visible'), delay);
           observerAnim.unobserve(entry.target);
         }
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
     animatedElements.forEach(el => observerAnim.observe(el));
   }
 
@@ -84,6 +74,17 @@
     });
   });
 
+  /* ─── TIMELINE TOGGLE ─── */
+  const toggleBtn = document.getElementById('timeline-toggle');
+  const olderBlock = document.getElementById('timeline-older');
+  if (toggleBtn && olderBlock) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = olderBlock.style.display === 'none';
+      olderBlock.style.display = isHidden ? '' : 'none';
+      toggleBtn.textContent = isHidden ? 'Voir moins ↑' : 'Voir plus ↓';
+    });
+  }
+
   /* ─── CAROUSELS ─── */
   document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
     const viewport = wrapper.querySelector('.carousel-viewport');
@@ -94,15 +95,28 @@
     if (!viewport || !prev || !next || !dotsEl) return;
 
     const isFormations = viewport.id === 'course-carousel';
-    const cardClass = isFormations ? '.course-card' : viewport.querySelector('.media-card') ? '.media-card' : '.project-card';
+    const isIntervention = viewport.id.startsWith('intervention-carousel');
+    let cardClass = '.project-card';
+    if (isFormations) cardClass = '.course-card';
+    else if (isIntervention) cardClass = '.intervention-card';
+    else if (viewport.querySelector('.media-card')) cardClass = '.media-card';
 
     const allCards = [...viewport.querySelectorAll(cardClass)];
     allCards.reverse().forEach(card => viewport.appendChild(card));
     const cards = [...viewport.querySelectorAll(cardClass)];
 
+    let currentPage = 0;
+    let programmaticScroll = false;
+    const hasSmooth = wrapper.hasAttribute('data-smooth');
+    const isMobile = () => window.innerWidth <= 768;
+
     function getCardsPerPage() {
       if (isFormations) return 6;
-      return window.innerWidth <= 768 ? 4 : 3;
+      if (isIntervention) {
+        if (viewport.id === 'intervention-carousel-3') return isMobile() ? 2 : 3;
+        return isMobile() ? 4 : 6;
+      }
+      return isMobile() ? 4 : 3;
     }
 
     function buildPages() {
@@ -114,46 +128,71 @@
         cards.slice(i, i + perPage).forEach(c => page.appendChild(c));
         viewport.appendChild(page);
       }
-      updateDots();
+      currentPage = 0;
+      updateView();
     }
 
-    const pages = () => viewport.querySelectorAll('.carousel-page');
+    function getPages() {
+      return viewport.querySelectorAll('.carousel-page');
+    }
 
-    function updateDots() {
-      const p = pages();
+    function updateView() {
+      const p = getPages();
       if (!p.length) return;
-      const pageW = viewport.offsetWidth;
-      const current = Math.round(viewport.scrollLeft / pageW);
+
+      if (isMobile()) {
+        p.forEach((pg, i) => pg.classList.toggle('active', i === currentPage));
+      } else {
+        programmaticScroll = true;
+        viewport.scrollTo({ left: currentPage * viewport.offsetWidth, behavior: hasSmooth ? 'smooth' : 'auto' });
+        setTimeout(() => { programmaticScroll = false; }, hasSmooth ? 400 : 50);
+      }
+
       dotsEl.innerHTML = '';
       for (let i = 0; i < p.length; i++) {
         const dot = document.createElement('button');
-        dot.className = 'carousel-dot' + (i === current ? ' active' : '');
+        dot.className = 'carousel-dot' + (i === currentPage ? ' active' : '');
         dot.setAttribute('aria-label', 'Page ' + (i + 1));
-        dot.addEventListener('click', () => {
-          viewport.scrollTo({ left: i * pageW, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-        });
+        dot.addEventListener('click', () => { currentPage = i; updateView(); });
         dotsEl.appendChild(dot);
       }
     }
 
-    prev.addEventListener('click', () => {
-      viewport.scrollBy({ left: -viewport.offsetWidth, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-    });
+    function goTo(page) {
+      const p = getPages();
+      currentPage = Math.max(0, Math.min(page, p.length - 1));
+      updateView();
+    }
 
-    next.addEventListener('click', () => {
-      viewport.scrollBy({ left: viewport.offsetWidth, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-    });
+    prev.addEventListener('click', () => goTo(currentPage - 1));
+    next.addEventListener('click', () => goTo(currentPage + 1));
 
-    viewport.addEventListener('scroll', updateDots, { passive: true });
+    let touchStartX = 0;
+    viewport.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    viewport.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        goTo(currentPage + (diff > 0 ? 1 : -1));
+      }
+    }, { passive: true });
+
+    if (!isMobile()) {
+      viewport.addEventListener('scroll', () => {
+        if (programmaticScroll) return;
+        const page = Math.round(viewport.scrollLeft / viewport.offsetWidth);
+        if (page !== currentPage) {
+          currentPage = page;
+          updateView();
+        }
+      }, { passive: true });
+    }
 
     let lastWidth = window.innerWidth;
     window.addEventListener('resize', () => {
-      if (window.innerWidth <= 768 && lastWidth > 768 || window.innerWidth > 768 && lastWidth <= 768) {
-        viewport.scrollTo({ left: 0 });
-        buildPages();
-      }
+      const crossed = (window.innerWidth <= 768 && lastWidth > 768) || (window.innerWidth > 768 && lastWidth <= 768);
       lastWidth = window.innerWidth;
-      updateDots();
+      if (crossed) currentPage = 0;
+      buildPages();
     });
 
     buildPages();
