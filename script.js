@@ -111,12 +111,9 @@
     const isMobile = () => window.innerWidth <= 768;
 
     function getCardsPerPage() {
-      if (isFormations) return 6;
-      if (isIntervention) {
-        if (viewport.id === 'intervention-carousel-3') return isMobile() ? 2 : 3;
-        return isMobile() ? 4 : 6;
-      }
-      return isMobile() ? 4 : 3;
+      if (isFormations) return isMobile() ? 2 : 6;
+      if (isIntervention) return isMobile() ? 2 : 6;
+      return isMobile() ? 2 : 3;
     }
 
     function buildPages() {

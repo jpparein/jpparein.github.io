@@ -1768,6 +1768,7 @@ ul { list-style: none; }
   }
   .carousel-page {
     display: none;
+    grid-template-columns: 1fr;
   }
   .carousel-page.active {
     display: grid !important;
@@ -1777,6 +1778,9 @@ ul { list-style: none; }
     grid-template-columns: repeat(2, 1fr);
   }
   .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
     grid-template-columns: 1fr;
   }
   .contact-links {
@@ -1790,13 +1794,6 @@ ul { list-style: none; }
 }
 
 @media (max-width: 480px) {
-  .carousel-page {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #intervention-carousel-3 .carousel-page.active {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
   .projects-grid-youtube {
     grid-template-columns: repeat(2, 1fr);
   }
