@@ -19,27 +19,34 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about">Profil</a></li>
-        <li><a href="#experience">Parcours</a></li>
-        <li><a href="#trainer">Formateur</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#media">Médias</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Profil</a></li>
+        <li><a href="#experience"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Parcours</a></li>
+        <li><a href="#trainer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 12 3 12 0v-5"/></svg>Formateur</a></li>
+        <li><a href="#projects"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Projets</a></li>
+        <li><a href="#media"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Médias</a></li>
+        <li><a href="#contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contact</a></li>
       </ul>
     </div>
   </nav>
   <!-- HERO -->
   <section class="hero" id="hero">
-    <!-- Hero Content Overlay -->
+    <div class="hero-bg">
+      <div class="hero-grid-pattern"></div>
+      <div class="hero-glow"></div>
+    </div>
     <div class="hero-content">
       <div class="hero-text" data-animate="fade-up">
-        <span class="hero-subtitle">Technicien informatique et réseaux</span>
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Disponible pour de nouvelles opportunités
+        </div>
+        <p class="hero-eyebrow">Technicien systèmes & réseaux • Formateur e-learning</p>
         <h1 class="hero-title">
-          <span class="hero-title-line">Jean-Philippe</span>
-          <span class="hero-title-line hero-title-accent">Parein</span>
+          Jean-Philippe
+          <span class="hero-title-accent">Parein</span>
         </h1>
         <p class="hero-tagline">
-          Technicien systèmes et réseaux, formateur e-learning et développeur. Je connecte les systèmes, le code et les connaissances depuis plus de 20 ans.
+          Technicien systèmes et réseaux, formateur e-learning et développeur. J'assure le dépannage, la maintenance et la continuité des systèmes tout en transformant mon expertise technique en formations claires et accessibles.
         </p>
         <div class="hero-actions">
           <a href="#experience" class="btn btn-primary">
@@ -47,33 +54,61 @@
             Voir mon parcours
           </a>
           <a href="CV.pdf" download class="btn btn-outline">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Télécharger mon CV
           </a>
-          <a href="#projects" class="btn btn-secondary">Explorer mes projets</a>
+        </div>
+        <div class="hero-skills">
+          <span class="skill-tag">Windows Server</span>
+          <span class="skill-tag">Réseaux</span>
+          <span class="skill-tag">Support</span>
+          <span class="skill-tag">C# / Unity</span>
+          <span class="skill-tag">E-learning</span>
         </div>
       </div>
-      <div class="hero-profile-card" data-animate="fade-up" data-delay="100">
-        <div class="profile-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Estaires — Hauts-de-France</span>
+      <div class="hero-bento" data-animate="fade-up" data-delay="100">
+        <div class="bento-card bento-main">
+          <div class="bento-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="bento-title">Double expertise technique et pédagogique</h3>
+          <p class="bento-text">Infrastructure, assistance utilisateur, développement et transmission des connaissances.</p>
         </div>
-        <div class="profile-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Plus de 20 ans d'expérience</span>
+        <div class="bento-card bento-stat">
+          <span class="bento-number">20+</span>
+          <span class="bento-label">années d'expérience</span>
         </div>
-        <div class="profile-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a3 3 0 003 3h8a3 3 0 003-3V8M12 14v2"/></svg>
-          <span>Systèmes, réseaux et formation</span>
+        <div class="bento-card bento-location">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <span class="bento-city">Estaires</span>
+            <span class="bento-region">Hauts-de-France</span>
+          </div>
         </div>
-        <div class="profile-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-          <span>Assistance sur site et à distance</span>
+        <div class="bento-card bento-domains">
+          <div class="bento-domain">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/></svg>
+            Systèmes & réseaux
+          </div>
+          <div class="bento-domain">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            Formation & développement
+          </div>
         </div>
-        <div class="profile-status">
-          <span class="status-dot"></span>
-          Ouvert aux opportunités
-        </div>
+      </div>
+    </div>
+    <div class="hero-bar" data-animate="fade-up" data-delay="200">
+      <div class="hero-bar-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        Assistance sur site et à distance
+      </div>
+      <div class="hero-bar-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        Maintenance systèmes & réseaux
+      </div>
+      <div class="hero-bar-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        Création de formations numériques
       </div>
     </div>
   </section>
@@ -890,14 +925,6 @@
             <div class="project-tags"><span>Unity</span><span>Action</span></div>
           </div>
         </a>
-        <a href="https://pareinjeanphilippe.itch.io/river-raid" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="80">
-          <div class="project-visual"><img src="img/projects/river-raid.jpg" alt="River Raid" loading="lazy"></div>
-          <div class="project-info">
-            <h3>River Raid</h3>
-            <p>Ma version simplifiée du jeu mythique River Raid.</p>
-            <div class="project-tags"><span>Unity</span><span>Action</span></div>
-          </div>
-        </a>
         <a href="https://pareinjeanphilippe.itch.io/classic-pong" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="40">
           <div class="project-visual"><img src="img/projects/classic-pong.jpg" alt="Pong Classic" loading="lazy"></div>
           <div class="project-info">
@@ -914,20 +941,20 @@
             <div class="project-tags"><span>Godot</span><span>Action</span></div>
           </div>
         </a>
-        <a href="https://pareinjeanphilippe.itch.io/pacman-3d" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="120">
-          <div class="project-visual"><img src="img/projects/pacman-3d.png" alt="Pacman 3D" loading="lazy"></div>
-          <div class="project-info">
-            <h3>Pacman 3D</h3>
-            <p>Clone du jeu Pac-Man en 3D.</p>
-            <div class="project-tags"><span>Unity</span><span>Action</span></div>
-          </div>
-        </a>
         <a href="https://pareinjeanphilippe.itch.io/tours-de-hano" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="240">
           <div class="project-visual"><img src="img/projects/tours-de-hano.jpg" alt="Tours de Hanoï" loading="lazy"></div>
           <div class="project-info">
             <h3>Tours de Hanoï</h3>
             <p>Jeu de réflexion mathématique.</p>
             <div class="project-tags"><span>Unity</span><span>Puzzle</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/pacman-3d" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="120">
+          <div class="project-visual"><img src="img/projects/pacman-3d.png" alt="Pacman 3D" loading="lazy"></div>
+          <div class="project-info">
+            <h3>Pacman 3D</h3>
+            <p>Clone du jeu Pac-Man en 3D.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
           </div>
         </a>
         <a href="https://pareinjeanphilippe.itch.io/dino-gravity" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="320">
@@ -943,6 +970,14 @@
           <div class="project-info">
             <h3>The Flame</h3>
             <p>Aidez la flamme à allumer son briquet.</p>
+            <div class="project-tags"><span>Unity</span><span>Action</span></div>
+          </div>
+        </a>
+        <a href="https://pareinjeanphilippe.itch.io/river-raid" target="_blank" rel="noopener" class="project-card project-card-game" data-animate="fade-up" data-delay="80">
+          <div class="project-visual"><img src="img/projects/river-raid.jpg" alt="River Raid" loading="lazy"></div>
+          <div class="project-info">
+            <h3>River Raid</h3>
+            <p>Ma version simplifiée du jeu mythique River Raid.</p>
             <div class="project-tags"><span>Unity</span><span>Action</span></div>
           </div>
         </a>
@@ -967,20 +1002,20 @@
             <div class="project-tags"><span>Unity</span><span>Assets</span></div>
           </div>
         </a>
-        <a href="https://github.com/jpparein/PSI-IP-Scanner" target="_blank" rel="noopener" class="project-card">
-          <div class="project-visual"><img src="img/projects/ip-scanner.svg" alt="PSI IP Scanner" loading="lazy"></div>
-          <div class="project-info">
-            <h3>PSI IP Scanner</h3>
-            <p>Outil de scan reseau pour decouvrir les appareils connectes sur un reseau local.</p>
-            <div class="project-tags"><span>C#</span><span>Reseau</span><span>MIT</span></div>
-          </div>
-        </a>
         <a href="https://github.com/jpparein/Taquin" target="_blank" rel="noopener" class="project-card">
           <div class="project-visual"><img src="img/projects/taquin-numbers.png" alt="Taquin 4x4 Unity" loading="lazy"></div>
           <div class="project-info">
             <h3>Taquin 4x4 - Jeu Unity</h3>
             <p>Jeu de taquin complet. Melange resoluble, chronometre, verification de victoire.</p>
             <div class="project-tags"><span>Unity</span><span>C#</span><span>Tutoriel</span><span>MIT</span></div>
+          </div>
+        </a>
+        <a href="https://github.com/jpparein/PSI-IP-Scanner" target="_blank" rel="noopener" class="project-card">
+          <div class="project-visual"><img src="img/projects/ip-scanner.svg" alt="PSI IP Scanner" loading="lazy"></div>
+          <div class="project-info">
+            <h3>PSI IP Scanner</h3>
+            <p>Outil de scan reseau pour decouvrir les appareils connectes sur un reseau local.</p>
+            <div class="project-tags"><span>C#</span><span>Reseau</span><span>MIT</span></div>
           </div>
         </a>
         <a href="https://github.com/jpparein/Whack-a-mole" target="_blank" rel="noopener" class="project-card">
@@ -1078,12 +1113,12 @@
               <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
             </div>
           </a>
-          <a href="https://www.journaldugeek.com/2019/01/02/resolution-2019-japprends-a-creer-jeux-applis-grace-a-udemy/" target="_blank" rel="noopener noreferrer" class="media-card">
-            <div class="media-thumbnail"><img src="img/media/journal-dugeek-unity.jpg" alt="Journal du Geek - Formation Unity" loading="lazy"></div>
+          <a href="https://www.clubic.com/bons-plans/formation-bon-plan/actualite-867048-bon-plan-word-excel-powerpoint-outlook-maitrisez-microsoft-office.html" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/clubic-excel.jpg" alt="Clubic - Formation Excel" loading="lazy"></div>
             <div class="media-info">
-              <div class="media-meta"><span class="media-badge badge-partenaire">Article partenaire</span><span class="media-year">2019</span></div>
-              <h3>Formation Unity et Vuforia présentée</h3>
-              <p>Présentation de mon cursus consacré au développement de jeux et d'applications en réalité augmentée avec Unity et Vuforia.</p>
+              <div class="media-meta"><span class="media-badge badge-selection">Sélection média</span><span class="media-year">2019</span></div>
+              <h3>Formation Excel présentée par Clubic</h3>
+              <p>La formation Apprendre et maîtriser Excel de A à Z a été mise en avant dans une sélection consacrée à Microsoft Office.</p>
               <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
             </div>
           </a>
@@ -1096,12 +1131,12 @@
               <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
             </div>
           </a>
-          <a href="https://www.clubic.com/bons-plans/formation-bon-plan/actualite-867048-bon-plan-word-excel-powerpoint-outlook-maitrisez-microsoft-office.html" target="_blank" rel="noopener noreferrer" class="media-card">
-            <div class="media-thumbnail"><img src="img/media/clubic-excel.jpg" alt="Clubic - Formation Excel" loading="lazy"></div>
+          <a href="https://www.journaldugeek.com/2019/01/02/resolution-2019-japprends-a-creer-jeux-applis-grace-a-udemy/" target="_blank" rel="noopener noreferrer" class="media-card">
+            <div class="media-thumbnail"><img src="img/media/journal-dugeek-unity.jpg" alt="Journal du Geek - Formation Unity" loading="lazy"></div>
             <div class="media-info">
-              <div class="media-meta"><span class="media-badge badge-selection">Sélection média</span><span class="media-year">2019</span></div>
-              <h3>Formation Excel présentée par Clubic</h3>
-              <p>La formation Apprendre et maîtriser Excel de A à Z a été mise en avant dans une sélection consacrée à Microsoft Office.</p>
+              <div class="media-meta"><span class="media-badge badge-partenaire">Article partenaire</span><span class="media-year">2019</span></div>
+              <h3>Formation Unity et Vuforia présentée</h3>
+              <p>Présentation de mon cursus consacré au développement de jeux et d'applications en réalité augmentée avec Unity et Vuforia.</p>
               <span class="media-link">Voir la référence <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></span>
             </div>
           </a>

@@ -93,22 +93,28 @@
 
     if (!viewport || !prev || !next || !dotsEl) return;
 
-    const isProject = viewport.id === 'games-carousel' || viewport.id === 'soft-carousel' || viewport.id === 'github-carousel';
-    const isMedia = viewport.id === 'media-carousel';
-    const CARDS_PER_PAGE = isProject || isMedia ? 3 : 6;
-    const cardClass = isProject ? '.project-card' : isMedia ? '.media-card' : '.course-card';
+    const isFormations = viewport.id === 'course-carousel';
+    const cardClass = isFormations ? '.course-card' : viewport.querySelector('.media-card') ? '.media-card' : '.project-card';
 
     const allCards = [...viewport.querySelectorAll(cardClass)];
     allCards.reverse().forEach(card => viewport.appendChild(card));
-
     const cards = [...viewport.querySelectorAll(cardClass)];
-    for (let i = 0; i < cards.length; i += CARDS_PER_PAGE) {
-      const page = document.createElement('div');
-      page.className = 'carousel-page';
-      for (let j = i; j < Math.min(i + CARDS_PER_PAGE, cards.length); j++) {
-        page.appendChild(cards[j]);
+
+    function getCardsPerPage() {
+      if (isFormations) return 6;
+      return window.innerWidth <= 768 ? 4 : 3;
+    }
+
+    function buildPages() {
+      viewport.querySelectorAll('.carousel-page').forEach(p => p.remove());
+      const perPage = getCardsPerPage();
+      for (let i = 0; i < cards.length; i += perPage) {
+        const page = document.createElement('div');
+        page.className = 'carousel-page';
+        cards.slice(i, i + perPage).forEach(c => page.appendChild(c));
+        viewport.appendChild(page);
       }
-      viewport.appendChild(page);
+      updateDots();
     }
 
     const pages = () => viewport.querySelectorAll('.carousel-page');
@@ -139,8 +145,18 @@
     });
 
     viewport.addEventListener('scroll', updateDots, { passive: true });
-    updateDots();
-    window.addEventListener('resize', updateDots);
+
+    let lastWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+      if (window.innerWidth <= 768 && lastWidth > 768 || window.innerWidth > 768 && lastWidth <= 768) {
+        viewport.scrollTo({ left: 0 });
+        buildPages();
+      }
+      lastWidth = window.innerWidth;
+      updateDots();
+    });
+
+    buildPages();
   });
 
   /* Contact form → mailto */
