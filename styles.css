@@ -1987,6 +1987,11 @@ ul { list-style: none; }
   }
   .nav-toggle {
     display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
   }
   .nav-links {
     display: none;
@@ -2093,6 +2098,10 @@ ul { list-style: none; }
     position: absolute;
     left: 10px;
   }
+  .timeline-subtitle {
+    padding-left: 0;
+    text-align: center;
+  }
   .diplomas-grid {
     grid-template-columns: 1fr;
   }
@@ -2133,27 +2142,51 @@ ul { list-style: none; }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .projects-grid-youtube {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 480px) {
   .trainer-domains {
     grid-template-columns: 1fr;
   }
   .hero-bento {
     grid-template-areas:
-      "portrait"
-      "stat"
-      "location"
-      "domains";
-    grid-template-columns: 1fr;
+      "stat location"
+      "domains domains";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
   .hero-portrait {
-    min-height: 330px;
+    display: none;
   }
-  .hero-portrait img {
-    height: 90%;
-    right: 0;
+  .hero-content {
+    gap: 26px;
+    padding-top: 88px;
+  }
+  .hero-badge {
+    align-items: flex-start;
+    padding: 8px 14px;
+    line-height: 1.4;
+  }
+  .hero-badge .dot {
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .bento-card {
+    padding: 16px;
+  }
+  .bento-stat,
+  .bento-location {
+    min-height: 104px;
+  }
+  .bento-number {
+    font-size: 36px;
+  }
+  .bento-location {
+    align-items: flex-start;
   }
   .hero-actions .btn {
     flex-basis: 100%;
@@ -2165,6 +2198,10 @@ ul { list-style: none; }
   }
   .contact-links { grid-template-columns: 1fr; }
   .contact-email-card { grid-column: auto; }
+  .about-text,
+  .contact-form {
+    padding: 20px;
+  }
   .value-list div {
     grid-template-columns: 1fr;
     gap: 2px;
