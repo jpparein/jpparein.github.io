@@ -34,17 +34,19 @@
     });
   });
 
-  const observerNav = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        navAnchors.forEach(a => {
-          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
-        });
-      }
+  function updateActiveNav() {
+    const marker = window.innerHeight * 0.32;
+    let activeId = '';
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= marker && rect.bottom > marker) activeId = section.id;
     });
-  }, { threshold: 0.3 });
-  sections.forEach(s => observerNav.observe(s));
+    navAnchors.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+    });
+  }
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 
   /* ─── SCROLL ANIMATIONS ─── */
   const animatedElements = document.querySelectorAll('[data-animate]');
@@ -94,6 +96,11 @@
 
     if (!viewport || !prev || !next || !dotsEl) return;
 
+    const sectionTitle = wrapper.previousElementSibling?.textContent?.trim() || 'Carrousel';
+    wrapper.setAttribute('role', 'region');
+    wrapper.setAttribute('aria-label', sectionTitle);
+    viewport.setAttribute('tabindex', '0');
+
     const isFormations = viewport.id === 'course-carousel';
     const isIntervention = viewport.id.startsWith('intervention-carousel');
     let cardClass = '.project-card';
@@ -125,7 +132,7 @@
         cards.slice(i, i + perPage).forEach(c => page.appendChild(c));
         viewport.appendChild(page);
       }
-      currentPage = 0;
+      currentPage = Math.min(currentPage, Math.max(0, getPages().length - 1));
       updateView();
     }
 
@@ -136,6 +143,12 @@
     function updateView() {
       const p = getPages();
       if (!p.length) return;
+
+      currentPage = Math.max(0, Math.min(currentPage, p.length - 1));
+      p.forEach((pg, i) => {
+        pg.setAttribute('aria-label', `Page ${i + 1} sur ${p.length}`);
+        pg.setAttribute('aria-hidden', i === currentPage ? 'false' : 'true');
+      });
 
       if (isMobile()) {
         p.forEach((pg, i) => pg.classList.toggle('active', i === currentPage));
@@ -149,10 +162,20 @@
       for (let i = 0; i < p.length; i++) {
         const dot = document.createElement('button');
         dot.className = 'carousel-dot' + (i === currentPage ? ' active' : '');
-        dot.setAttribute('aria-label', 'Page ' + (i + 1));
+        dot.setAttribute('aria-label', `Afficher la page ${i + 1} sur ${p.length}`);
+        if (i === currentPage) dot.setAttribute('aria-current', 'true');
         dot.addEventListener('click', () => { currentPage = i; updateView(); });
         dotsEl.appendChild(dot);
       }
+
+      const status = document.createElement('span');
+      status.className = 'carousel-status';
+      status.setAttribute('aria-live', 'polite');
+      status.textContent = `${currentPage + 1} / ${p.length}`;
+      dotsEl.appendChild(status);
+
+      prev.disabled = currentPage === 0;
+      next.disabled = currentPage === p.length - 1;
     }
 
     function goTo(page) {
@@ -163,6 +186,15 @@
 
     prev.addEventListener('click', () => goTo(currentPage - 1));
     next.addEventListener('click', () => goTo(currentPage + 1));
+    viewport.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        goTo(currentPage - 1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        goTo(currentPage + 1);
+      }
+    });
 
     let touchStartX = 0;
     viewport.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
@@ -194,6 +226,31 @@
 
     buildPages();
   });
+
+  /* Copie rapide de l'adresse email */
+  const copyEmail = document.getElementById('copyEmail');
+  const copyStatus = document.getElementById('copyStatus');
+  if (copyEmail && copyStatus) {
+    copyEmail.addEventListener('click', async () => {
+      const email = copyEmail.dataset.email;
+      try {
+        await navigator.clipboard.writeText(email);
+        copyStatus.textContent = 'Adresse copiée.';
+      } catch (_) {
+        const field = document.createElement('textarea');
+        field.value = email;
+        field.setAttribute('readonly', '');
+        field.style.position = 'fixed';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand('copy');
+        field.remove();
+        copyStatus.textContent = 'Adresse copiée.';
+      }
+      setTimeout(() => { copyStatus.textContent = ''; }, 2500);
+    });
+  }
 
   /* Contact form → mailto */
   const contactForm = document.getElementById('contactForm');
